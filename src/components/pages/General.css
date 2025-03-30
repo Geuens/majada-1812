@@ -1,0 +1,248 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Zain&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+/* General section container styling */
+.section-container {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0.5rem 2%;
+    margin: 0.7rem auto;
+    max-width: 1900px;
+    border-radius: 5px;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 1.3rem;
+    line-height:1.2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Styling for the h2 element */
+.section-container h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 15px;
+    text-align: left;
+    font-family: "Sono", sans-serif;
+    font-size: 1.6rem;
+    color: #0056b3;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+/* Creative underline effect */
+.section-container h2::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    bottom: -2px;
+    width: 6%;
+    height: 2px;
+    background: linear-gradient(135deg, #0056b3, #002f6c);
+    border-radius: 2px;
+    transition: width 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0.7;
+}
+
+/* On hover, extend underline */
+.section-container h2:hover::after {
+    width: 15%;
+    opacity: 1;
+}
+
+/* Flex container for left and right columns */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Left column for the article list */
+.article-list {
+    flex: 1;
+    max-width: 55%;
+    overflow-y: auto;
+    padding-right: 0.1rem;
+    padding-bottom: 1rem;
+}
+
+/* Right column for the preview or photos */
+.article-preview {
+    flex: 0 0 40%;  /* Adjust the right column width */
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    height: 85vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px; /* Adjust based on the desired scroll behavior */
+    padding: 1rem;
+    margin-top: 20px; /* Optional: to give some space from the top */
+}
+
+/* Styling for the preview image */
+.preview-image {
+    width: 90%;
+    height: auto;
+    max-height: 400px; /* Adjust max-height to prevent the image from being too large */
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: -1rem;
+}
+
+/* Text inside the preview column */
+.preview-text {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top:-1rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+    padding-bottom: 2rem;
+    font-family: 'Markazi Text', serif;
+    max-height: 100px;  /* Prevent overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limits to 5 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+
+/* Styling for the [Leer más...] link */
+.read-more {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-family: 'Sono', sans-serif;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    color: #002f6c;
+    text-decoration: underline;
+}
+
+
+/* Container for the image and text side by side */
+.article-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Ensure everything is aligned from the left */
+}
+
+
+/* Container for the text (title + subtitle) stacked vertically */
+.article-text {
+    display: flex;
+    flex-direction: column; /* Stack title and subtitle vertically */
+    justify-content: flex-start; /* Align the content from top */
+}
+
+/* Styling for the cover image */
+.cover-image {
+    width: 100px !important;  /* Set a fixed width for the image */
+    height: 100px !important; /* Set a fixed height for the image */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    display: inline-block; /* Ensures the image aligns properly with text */
+}
+
+/* Optional: Date styling */
+.article-date {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    color: #999;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Styling for article list items */
+.article-list-item {
+    margin-top: 1rem;
+    padding: 1rem 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Markazi Text', serif;
+    font-size: 1rem;
+}
+
+/* Hover effect for article list items */
+.article-list-item:hover {
+    background-color: #f8fcff;
+    border-color: #0056b3;
+}
+
+/* Styling for article titles */
+.article-title {
+    font-size: 1.7rem;
+    font-family: 'Markazi Text', sans-serif;
+    text-align: left;
+    font-weight: 500;
+    color: #2c2c2c;
+    padding-left: 0.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-bottom: -1rem;
+    margin-top: -0.3rem;
+}
+
+/* Styling for article subtitles */
+.article-subtitle {
+    font-size: 1.3rem;
+    text-align: left;
+    color: #555;
+    padding-left: 1rem;
+    font-family: 'Markazi Text', sans-serif;
+    margin-bottom: -0.5rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-container {
+        padding: 1rem 2%;
+    }
+
+    .article-list-item {
+        font-size: 1rem;
+        max-height: 100px;
+    }
+
+    .article-title {
+        font-size: 1.4rem;
+    }
+
+    .article-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack the columns on smaller screens */
+    }
+
+    .article-list {
+        max-width: 100%;
+    }
+
+    .article-preview {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+

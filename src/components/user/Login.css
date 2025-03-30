@@ -1,0 +1,107 @@
+.login-container {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    padding: 2rem 3%;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #D32F2F;
+    border-bottom: 3px solid #D32F2F;
+}
+
+.login-container p.business-message {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.1rem;
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+
+.business-message strong {
+    font-weight: bold;
+    color: #2c2c2c; /* Ensures it matches the main text color for consistency */
+}
+
+
+.error-message {
+    color: #D32F2F;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.google-login-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #4285F4;
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 9.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.google-login-button:hover {
+    background-color: #357AE8;
+}
+
+.google-login-button:focus {
+    outline: none;
+}
+
+.terms-container {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 0.95rem;
+}
+
+.terms-container h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4rem;
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+}
+
+.accept-terms-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #D32F2F;
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accept-terms-button:hover {
+    background-color: #a32f2f;
+}
+
+
+
+

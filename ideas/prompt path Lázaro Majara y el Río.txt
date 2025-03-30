@@ -1,0 +1,41 @@
+PROMPT 1
+
+Con la siguiente información y únicamente con la siguiente información redacta un articulo periodístico informativo en tono neutro y aureliano:
+
+"""[Content]"""
+
+El articulo debe ser las siguiente reglas:
+1) Debe ser claramente diferenciable del texto original con la información dada, debe aportar un valor añadido
+2) Se debe priorizar la claridad y sencillez para transmitir la información de forma eficaz.
+3) Si es procedente puede restructurarse información, con bullet points u otros esquemas y resúmenes para poder consumir la información con un simple vistazo.
+4) Utiliza negrita y subtítulos para una lectura mas fácil y dinámica
+
+5) El articulo debe tener un antetítulo
+6) El primer párrafo del articulo debe captar la atención y hacer entender que se va a tratar, debe ser la joya de la corona.
+
+PROMPT 2
+
+Debes pasar este articulo al siguiente formato JSON:
+
+{
+  "title": "Titulo",
+  "subtitle": "Antetitulo.",
+  "cover": "/data/articles/articles_resources/Titulo.jpg",
+  "link": "/article/Titulo",
+  "date": "Fecha de hoy",
+  "author": "Lázaro Majara y del Río",
+  "content": [
+    {
+      "type": "image",
+      "src": "/data/articles/articles_resources/Titulo.jpg",
+      "alt": "descripción imagen"
+    },
+    {
+      "type": "paragraph",
+      "text": "texto: \n .articulo",
+      "bold": ["Palbranegrita", "Frase en negrita"]
+    },
+    {
+      "type": "subtitle",
+      "text": "subtitulo"
+    }

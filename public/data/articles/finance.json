@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Historia y Evolución de Majadahonda",
+    "subtitle": "De pueblo rural a ciudad moderna",
+    "link": "/article/historia-majadahonda",
+    "date": "2024-03-12",
+    "author": "Carlos Fernández",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Majadahonda, una ciudad con raíces profundas en la historia de España, ha experimentado una transformación impresionante desde sus orígenes como un pequeño pueblo agrícola hasta convertirse en una de las localidades más prósperas de la Comunidad de Madrid.",
+        "bold": ["Majadahonda", "historia de España", "transformación", "Comunidad de Madrid"]
+      },
+      {
+        "type": "paragraph",
+        "text": "Durante siglos, Majadahonda fue conocida por sus tierras fértiles y su comunidad agrícola. Sin embargo, a finales del siglo XX, con la expansión de Madrid y la mejora de infraestructuras, la ciudad se convirtió en un enclave residencial de alto nivel, atrayendo a familias y profesionales en busca de calidad de vida.",
+        "bold": ["siglo XX", "expansión de Madrid", "infraestructuras", "enclave residencial"]
+      }
+    ]
+  },
+  {
+    "title": "El Mercado Inmobiliario en Majadahonda",
+    "subtitle": "Un paraíso para la inversión en vivienda",
+    "link": "/article/mercado-inmobiliario-majadahonda",
+    "date": "2024-03-10",
+    "author": "Laura Gómez",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Majadahonda se ha consolidado como una de las áreas más exclusivas para la compra de vivienda en la Comunidad de Madrid. Con una combinación de espacios verdes, seguridad y servicios de alta calidad, esta ciudad se ha convertido en un destino ideal para familias y profesionales.",
+        "bold": ["Majadahonda", "exclusivas", "vivienda", "Comunidad de Madrid"]
+      },
+      {
+        "type": "paragraph",
+        "text": "El mercado inmobiliario ha mostrado una tendencia al alza en los últimos años, con un incremento en el precio del metro cuadrado debido a la alta demanda y la escasez de suelo disponible para nuevas construcciones.",
+        "bold": ["mercado inmobiliario", "precio del metro cuadrado", "demanda", "nuevas construcciones"]
+      }
+    ]
+  },
+  {
+    "title": "Gastronomía en Majadahonda",
+    "subtitle": "Los mejores restaurantes y bares de la ciudad",
+    "link": "/article/gastronomia-majadahonda",
+    "date": "2024-03-08",
+    "author": "Marta Ruiz",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Majadahonda es un referente gastronómico dentro de la Comunidad de Madrid. Desde restaurantes con estrella Michelin hasta tabernas tradicionales, la oferta culinaria de la ciudad es variada y de alta calidad.",
+        "bold": ["Majadahonda", "gastronómico", "Comunidad de Madrid", "estrella Michelin"]
+      },
+      {
+        "type": "paragraph",
+        "text": "Entre los favoritos de los residentes se encuentran los asadores de carne, los bares de tapas en el centro y las terrazas con vistas, ideales para disfrutar de la cocina española en un entorno privilegiado.",
+        "bold": ["asadores", "bares de tapas", "cocina española", "entorno privilegiado"]
+      }
+    ]
+  },
+  {
+    "title": "Deporte y Ocio en Majadahonda",
+    "subtitle": "Las mejores actividades para disfrutar en la ciudad",
+    "link": "/article/deporte-ocio-majadahonda",
+    "date": "2024-03-05",
+    "author": "Diego López",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Majadahonda es conocida por su gran oferta deportiva. Desde clubes de fútbol y hockey sobre hielo hasta gimnasios de última generación, la ciudad ofrece múltiples opciones para los amantes del deporte.",
+        "bold": ["Majadahonda", "deportiva", "fútbol", "hockey sobre hielo"]
+      },
+      {
+        "type": "paragraph",
+        "text": "El Monte del Pilar es otro gran atractivo de la zona, proporcionando un espacio natural perfecto para el senderismo, el ciclismo y la desconexión del ritmo urbano.",
+        "bold": ["Monte del Pilar", "espacio natural", "senderismo", "ciclismo"]
+      }
+    ]
+  },
+  {
+    "title": "Fiestas y Tradiciones de Majadahonda",
+    "subtitle": "Cultura y celebración en el corazón de la ciudad",
+    "link": "/article/fiestas-tradiciones-majadahonda",
+    "date": "2024-03-01",
+    "author": "Ana Pérez",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Las fiestas de Majadahonda reflejan la riqueza cultural de la ciudad. Entre las más destacadas se encuentran las Fiestas Patronales en honor al Santísimo Cristo de los Remedios, donde se celebran eventos religiosos, conciertos y ferias.",
+        "bold": ["Majadahonda", "fiestas", "Santísimo Cristo de los Remedios", "ferias"]
+      },
+      {
+        "type": "paragraph",
+        "text": "Además, las festividades incluyen encierros de toros, eventos gastronómicos y actividades para toda la familia, consolidando a Majadahonda como una ciudad vibrante y llena de tradición.",
+        "bold": ["encierros de toros", "eventos gastronómicos", "familia", "tradición"]
+      }
+    ]
+  }
+]

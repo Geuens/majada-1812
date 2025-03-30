@@ -1,0 +1,63 @@
+PROMPT 1
+
+Redacta un articulo que tenga como tema principal: "Como le hemos fallado a una política local, que bebe mas de las siglas de los partidos y extremismo de la política nacional, en lugar de un amor a la tierra y la posibilidad de mejorar un lugar con pequeños actos y políticas cercanas"
+
+La estructura debe ser:
+
+-Parrafo 1: "Hablar de como la política local es la mas bonita por ser la mas cercana, en aquella en que las políticas tienen consecuencias reales y directas. donde se puede crear la visión que uno tiene de un lugar"
+-Parrafo 2: "Hablar de como debido a esta cercania y accion directa, tiene sentido que los politicos residan ahi donde hacen política local, para estar en comunidad con su entorno y las acciones y consecuencias que tienen sus políticas"
+-Parrafo 3: "Hablar de como el politico y el votante, parece dar importancia a las siglas nacionales en problemas urbanísticos o sociales que nada tienen que ver con la política nacional"
+-Parrafo 4: "hablar de como los extremismos y la política confrontacional nacional se retrasmite a la política local, cuando debería ser lo opuesto"
+-Parrafo 5: "cerrar de froma esperanzadora"
+
+El articulo debe ser las siguiente reglas:
+1) Debe aportar un valor añadido, ideas concretas y mejorar los temas porpuestos
+2) Se debe priorizar completar ideas profundas, no hablar de generalidades, ni tópicos superficiales.
+3) La ideología debe ser aureliana, basada en la virtud, la libertad y la cercania. Rechazar ideas post-modernas, socialistas y populistas.
+4) Utiliza negrita y subtítulos para una lectura mas fácil y dinámica.
+
+5) El articulo debe tener un antetítulo
+6) El primer párrafo del articulo debe captar la atención y hacer entender que se va a tratar, debe ser la joya de la corona.
+
+
+PROMPT 2:
+
+Revisa este artículos, analizando los puntos flojos en la argumentación.
+
+Prompt 3:
+
+Reescribe este articulo teniendo encuenta estos puntos.
+
+Prompt
+
+PROMPT 4:
+
+Reescribe este articulo de forma más elegante, en un tono mas castizo, inspirado en galdos pero también en la prsa de kawabata.
+
+
+PROMPT 5:
+
+Debes pasar este articulo al siguiente formato JSON:
+
+{
+  "title": "Titulo",
+  "subtitle": "Antetitulo.",
+  "cover": "/data/articles/articles_resources/Titulo.jpg",
+  "link": "/article/Titulo",
+  "date": "Fecha de hoy",
+  "author": "Alonso de Fuenteblanca Mojada",
+  "content": [
+    {
+      "type": "image",
+      "src": "/data/articles/articles_resources/Titulo.jpg",
+      "alt": "descripción imagen"
+    },
+    {
+      "type": "paragraph",
+      "text": "texto: \n .articulo",
+      "bold": ["Palbranegrita", "Frase en negrita"]
+    },
+    {
+      "type": "subtitle",
+      "text": "subtitulo"
+    }

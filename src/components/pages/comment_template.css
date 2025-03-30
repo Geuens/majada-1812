@@ -1,0 +1,155 @@
+/* General Styling for the Comments Section */
+.comments-section {
+    font-family: 'Markazi', serif; /* 'Markazi' for general content */
+    color: #2c2c2c;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+/* Comments Section Title */
+.comments-section-title {
+    margin-bottom: 0.9rem;
+    margin-top: 5px;
+    text-align: left;
+    font-family: "Sono", sans-serif; /* 'Sono' for the title */
+    font-size: 1.3rem;
+    color: #0056b3; /* Blue color */
+    position: relative;
+    padding-bottom: 3px;
+}
+
+/* Creative underline effect */
+.comments-section-title::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: -2px;
+    width: 10%;
+    height: 2px;
+    background: linear-gradient(135deg, #0056b3, #002f6c); /* Gradient underline */
+    border-radius: 2px;
+    transition: width 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0.7;
+}
+
+/* On hover, extend underline */
+.comments-section-title:hover::after {
+    width: 20%;
+    opacity: 1;
+}
+
+
+/* Add Comment Form */
+.add-comment-form {
+    margin-bottom: 1.2rem; /* Reduced margin */
+    margin-top: 1.5rem; /* Adjusted top margin */
+    font-family: 'Markazi', serif; /* 'Markazi' for form content */
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-textarea {
+    width: 95%;
+    margin-top: 15px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    font-size: 1.1rem; /* Slightly bigger font size */
+    font-family: 'Markazi', serif; /* 'Markazi' for textarea */
+    line-height: 1.6;
+    resize: none;
+    margin-bottom: 1rem;
+    color: #2c2c2c;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.comment-input {
+    width: 55%;
+    margin-top: 15px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    font-size: 1.1rem; /* Slightly bigger font size */
+    font-family: 'Markazi', serif; /* 'Markazi' for textarea */
+    line-height: 1;
+    resize: none;
+    margin-bottom: 0rem;
+    color: #2c2c2c;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.comment-submit-button {
+    align-self: flex-start;
+    background-color: #0056b3; /* Blue background */
+    color: white;
+    border: 1px solid #0056b3;
+    padding: 0.6rem 1.2rem;
+    font-family: 'Sono', sans-serif; /* 'Sono' for buttons */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comment-submit-button:hover {
+    background-color: white;
+    color: #0056b3; /* Blue text on hover */
+}
+
+/* Comments List */
+.comment-list {
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual Comment */
+.comment-item {
+    margin-top: 1.5rem; /* Reduced margin */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Username and Time */
+.comment-header {
+    font-family: "Sono", sans-serif; /* 'Sono' for the title */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #0056b3; /* Blue color for header */
+    margin-bottom: -0.8rem; /* Reduced margin */
+}
+
+.comment-username {
+    font-family: "Sono", sans-serif; /* 'Sono' for the title */
+    font-weight: bold;
+    font-size: 1.5rem; /* Slightly bigger font size */
+    text-align: left;
+    color: #0056b3; /* Blue username */
+    margin-bottom:1rem;
+}
+
+.comment-time {
+    font-family: 'Markazi', serif; /* 'Markazi' for time */
+    font-size: 0.8rem;
+    color: #a8a8a8;
+    text-align: right;
+}
+
+/* Comment Content */
+.comment-content {
+    font-family: 'Markazi', serif; /* 'Markazi' for content */
+    font-size: 1.1rem; /* Slightly bigger font size */
+    line-height: 1.2;
+    color: #3a3a3a;
+    text-align: left;
+    margin-left:1rem;
+}
+
+
+
+
+
+
+

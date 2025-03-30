@@ -1,0 +1,247 @@
+/* Main App container */
+.App {
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #333333;
+  padding: 2%;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #f5f5f5;
+  padding: 1rem 2%;
+}
+
+/* Main Title */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zain&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+
+
+
+.wsj-title {
+  font-family: 'Barriecito', serif;
+  font-weight: 4200;
+  font-size: 3.5rem;
+  letter-spacing: 15px;
+  color: #0056b3;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 0.5rem;
+  background-color: transparent;
+  transition: font-size 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+              top 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+              left 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+              padding 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+/* Subtitle */
+.wsj-sub-title {
+  font-family: 'Zain';
+  font-size:  20px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #7d7d7d;
+  margin: 0 auto 0.7rem;
+  padding: 0.2rem 0.5rem;
+  transition: transform 0.4s ease;
+}
+
+/* Subtitle hidden */
+.sub-title-hidden {
+  transform: translateY(-10px);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.5rem;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.5s ease-in-out;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 550px;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation links */
+nav a {
+  font-family: 'Sono', serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 20px;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0056b3; /* Bright blue for hover effect */
+  background-color: rgba(0, 123, 255, 0.2); /* Slightly stronger blue background on hover */
+}
+
+/* Container for sentence */
+.container-sentence {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-talentos {
+  margin-top: 20px;
+  width: 35px;
+  height: auto;
+}
+
+/* Sentence text */
+.sentence {
+  margin-top: 40px;
+  font-family: 'Zain', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7d7d7d;
+  text-align: center;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* Minimalist custom scroll bar */
+::-webkit-scrollbar {
+    width: 8px; /* Thin scroll bar */
+    height: 8px; /* For horizontal scroll */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Neutral light grey background */
+    border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8; /* Neutral grey for the thumb */
+    border-radius: 10px; /* Rounded edges */
+    border: 2px solid #f0f0f0; /* Adds space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3; /* Bright red when hovered */
+}
+
+/* Login Button */
+.login-button {
+  position: fixed;
+  top: 20px;       /* Set a margin from the top */
+  right: 40px;     /* Set a margin from the right */
+  background-color: #D32F2F; /* Red color */
+  color: white;
+  font-family: 'Zain', sans-serif; /* Same font as nav links */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1002; /* Ensure it's above other content */
+}
+
+.login-button:hover {
+  background-color: rgba(211, 47, 47, 0.1); /* Light red background like nav */
+  color: #D32F2F; /* Change text color to match hover effect */
+}
+
+.chat-link {
+    position: absolute;
+    right: 50px; /* Adjust spacing to your preference */
+    top: 30px; /* Align to center */
+}
+
+.chat-link a {
+    text-decoration: none; /* Remove underline */
+    font-family: 'Sono', serif;
+    font-size: 18px;
+    color: #0056b3; /* Ensure text color is black */
+}
+
+.chat-link a:hover {
+    text-decoration: none;
+    color: black; /* Optional: Change color on hover */
+}
+
+
+@media (max-width: 768px) {
+
+
+  .wsj-title {
+    font-family: 'Barriecito', serif;
+    font-weight: 700; /* Slightly reduce weight for a softer appearance */
+    font-size: 2rem; /* Adjust for better proportion on small screens */
+    color: #333333; /* A softer black for a more modern look */
+    text-align: center; /* Center-align the title for focus */
+    margin: 0.5rem auto; /* Balance spacing above and below */
+    padding: 0.8rem 1rem; /* Add a bit more padding for touch-friendly design */
+    transition: all 0.4s ease-in-out; /* Smooth animations for a polished feel */
+  }
+
+  .wsj-sub-title {
+    display: none; /* Hide non-fixed title */
+  }
+
+  nav {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .title-fixed  {
+    display: none; /* Hide non-fixed title */
+  }
+
+  .login-button {
+    top: 10px;
+    right: 20px;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .title-fixed {
+    top: 2rem; /* Increase space for mobile screens */
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    font-size: 16px; /* Adjust font size */
+    padding: 0.2rem 0.4rem; /* Adjust padding */
+  }
+
+  nav.fixed {
+  position: fixed;
+  top: 9px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60%;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+}
+
+
+
+

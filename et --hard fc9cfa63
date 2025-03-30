@@ -1,0 +1,16 @@
+[33m7c955b4e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m)[m python server, before js server changes
+[33m90a7b95a[m minor portfolio and asset changes
+[33m395b0169[m added portofolio delete
+[33m6c0ada78[m[33m ([m[1;31morigin/develop[m[33m)[m portfolio front-back connection fixed
+[33m0555ced2[m .env
+[33m90b59189[m division with asset manager
+[33mbbe90a01[m changes in portfolio front
+[33mb6e9c7f6[m changes before change in portfolio
+[33mfc9cfa63[m change front profile
+[33mc724fb6d[m change in logic of userpage
+[33me3be900e[m FRONT END MODIFICATIONS
+[33m1c104fc4[m google id login and saved in mongodb
+[33mde110032[m solved error of signout and login status propagation
+[33m8cb08727[m creating the login and user handling
+[33m0e9fd728[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m article handler update
+[33m72031507[m Initial commit

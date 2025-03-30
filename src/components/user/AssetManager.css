@@ -1,0 +1,151 @@
+/* Asset Management Section */
+.asset-management {
+  width: 70%;
+  display: flex; /* Horizontal layout */
+  justify-content: space-between;
+  gap: 1rem;
+  margin-left: 15%;
+}
+
+.asset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Add spacing between fields */
+  width: 40%
+}
+
+.add-button {
+  font-family: 'Crimson Pro', serif;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #D32F2F;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #f9f9f9;
+  color: #D32F2F;
+}
+
+.add-button:active {
+  background-color: #D32F2F;
+  color: white;
+}
+
+/* Input Group for Dropdown */
+.input-group {
+  position: relative; /* Anchor dropdown to this container */
+  display: flex;
+  flex-direction: column; /* Stack input and dropdown vertically */
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: absolute; /* Position relative to .input-group */
+  margin-bottom: 5px; /* Position relative to .input-group */
+  top: 100%; /* Place dropdown right below the input field */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%; /* Match input width */
+  max-height: 200px; /* Limit height for scrolling */
+  overflow-y: auto; /* Add scroll for large content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  z-index: 1000; /* Ensure it appears above other elements */
+  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove bullet points */
+  margin-top: 0.5rem; /* Add some spacing below the input field */
+}
+
+.dropdown-item {
+  padding: 0.8rem;
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ffecec; /* Light red */
+  color: #D32F2F; /* Primary red color */
+}
+
+.dropdown-item:active {
+  background-color: #D32F2F;
+  color: white;
+}
+
+/* Align Input Fields */
+.input-field {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%; /* Ensure uniform width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Asset List Section */
+.asset-list {
+  flex: 1;
+  width: 80%;
+  height: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.asset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.asset-item span {
+  margin: 0 auto;
+}
+
+.asset-item:last-child {
+  border-bottom: none;
+}
+
+.asset-item:hover {
+  background-color: #eee;
+}
+
+.remove-button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #D32F2F;
+  border: 1px solid #D32F2F;
+}
+
+.remove-button:hover {
+  background-color: #D32F2F;
+  color: white;
+}
+
+/* Portfolio Value Section */
+.portfolio-value {
+  display: block;
+  font-size: 1rem; /* Slightly larger for emphasis */
+  font-weight: bold; /* Make it more prominent */
+  margin-top: 1rem; /* Add space above */
+  padding: 0.5rem; /* Add some internal spacing */
+  text-align: center; /* Center the text */
+  border-top: 1px solid #ddd; /* Add a separator line for clarity */
+}
+

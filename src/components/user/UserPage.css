@@ -1,0 +1,188 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap');
+
+/* General user page container styling */
+.user-page-container {
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+  padding: 2rem 3rem;
+  margin: 2rem auto;
+  max-width: 77%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Merriweather', serif;
+  position: relative; /* Enable absolute positioning inside this container */
+}
+
+/* Welcome title styling */
+.welcome-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+.welcome-title::after {
+  content: "";
+  display: block;
+  width: 100%; /* Full width red line */
+  height: 2.5px;
+  background-color: #D32F2F; /* Red underline */
+  margin-top: 0.5rem;
+}
+
+/* Profile section styling */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.profile-image {
+  border: 4px solid #D32F2F;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile-name {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+}
+
+.profile-quote {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 80%;
+}
+
+/* Tabs styling */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #2c2c2c;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.tab:hover {
+  background-color: #e0e0e0;
+}
+
+.tab.active {
+  background-color: #D32F2F;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Save Profile button */
+.save-profile-button {
+  padding: 0.6rem 1.5rem;
+  background-color: #D32F2F;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.save-profile-button:hover {
+  background-color: #a32f2f;
+  transform: scale(1.03);
+}
+
+/* Sign Out button */
+.signout-button {
+  padding: 0.6rem 1.5rem;
+  background-color: #9e9e9e; /* Grey color for differentiation */
+  font-family: 'Crimson Pro', serif;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Position at the bottom right */
+  bottom: 1.5rem;
+  right: 1.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.signout-button:hover {
+  background-color: #7e7e7e; /* Darker grey on hover */
+  transform: scale(1.03);
+}
+
+/* Error message styling */
+.error-message {
+  color: #C62828;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .user-page-container {
+    padding: 1.5rem 2rem;
+    margin: 1.5rem auto;
+  }
+
+  .profile-quote {
+    width: 100%; /* Make it full-width on mobile */
+    font-size: 0.9rem;
+  }
+
+  .welcome-title {
+    font-size: 1.8rem;
+  }
+
+  .tab {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .save-profile-button, .signout-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .signout-button {
+    bottom: 1rem;
+    right: 1rem; /* Adjust position for smaller screens */
+  }
+}
+
+
+
+
+
+
+

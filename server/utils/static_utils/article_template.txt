@@ -1,0 +1,19 @@
+{
+    "title": "",
+    "subtitle": "",
+    "link": "/article/name-of-article",
+    "date": "",
+    "author": "",
+    "content": [
+        {
+            "type": "paragraph",
+            "text": "",
+            "bold": ["bold-word-1", "bold-wrod-2"]
+        },
+        {
+            "type": "image",
+            "src": "/data/articles/articles_resources/image-3.jpg",
+            "alt": ""
+        },
+    ]
+},

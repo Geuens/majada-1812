@@ -1,0 +1,171 @@
+/* Styling for the dropdown container */
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+/* Styling for dropdown labels */
+.dropdown-container label {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Crimson Pro', serif;
+    color: #2c2c2c;
+}
+
+/* Styling for the dropdown elements */
+.dropdown-container select {
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-container select:focus {
+    border-color: #D32F2F; /* Bright red border on focus */
+    background-color: #fff;
+    outline: none;
+}
+
+/* Portfolio label inspired by General.css */
+.portfolio-label {
+    color: #D32F2F; /* Bright red */
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif; /* Match the font used in General.css */
+    position: relative; /* Needed for the arrow effect */
+    padding-right: 1rem; /* Space for the arrow */
+}
+
+.portfolio-label::after {
+    content: '→'; /* Right arrow */
+    color: #D32F2F; /* Same color as the text */
+    position: absolute;
+    right: 0; /* Align arrow to the right */
+    font-size: 1rem; /* Adjust size to match text */
+    transition: transform 0.3s ease;
+}
+
+.portfolio-label:hover {
+    color: darkred; /* Darker red on hover */
+}
+
+.portfolio-label:hover::after {
+    transform: translateX(5px); /* Arrow moves slightly to the right on hover */
+}
+
+
+/* Styling for the working-stage component */
+/* Styling for the working-stage container with a grey line */
+.working-stage-container {
+    position: relative;
+    width: 100%; /* Ensure the container takes up the full width of the parent */
+}
+
+.working-stage-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Thin line */
+    background-color: #ccc; /* Faint grey color */
+    z-index: 0; /* Keeps it below the main component */
+}
+
+
+.working-stage {
+    width: 70%;
+    margin: 2rem auto; /* Center the component horizontally */
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ensure consistent height */
+    background: none; /* Remove direct background application */
+    overflow: hidden; /* Ensure the background doesn't extend beyond the container */
+}
+
+/* Background image styling */
+.working-stage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../resources/image-4.jpg'); /* Background image */
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Center the background image */
+    opacity: 0.5; /* Greyed-out effect for the image only */
+    z-index: 1; /* Ensure the background stays behind the content */
+}
+
+/* White box for text content */
+.working-stage-content {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white box for contrast */
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for the box */
+    max-width: 600px;
+    z-index: 2; /* Ensure content appears above the background */
+    position: relative; /* Keeps it above the background image */
+}
+
+/* Title styling */
+.working-stage-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #D32F2F; /* Bright red consistent with the theme */
+    border-bottom: 2px solid #D32F2F; /* Red underline */
+    padding-bottom: 0.5rem;
+}
+
+/* Paragraph styling */
+.working-stage-content p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: #555; /* Text color matches the theme */
+    margin: 0 auto;
+}
+
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .dropdown-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .dropdown-container label {
+        width: 100%;
+    }
+
+    .dropdown-container select {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
