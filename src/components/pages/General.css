@@ -213,7 +213,7 @@
     }
 
     .article-list-item {
-        font-size: 1rem;
+        font-size: 3rem;
         max-height: none; /* Removed max-height to allow content to expand */
     }
 
