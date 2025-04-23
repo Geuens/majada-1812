@@ -98,7 +98,7 @@ function App() {
           <Route path="/" element={<Values />} />
           <Route path="/values" element={<Values />} />
           <Route path="/finance" element={<Finance />} />
-          <Route path="/data" element={<Data userId={userId} isLoggedIn={isLoggedIn} />} />
+          <Route path="/data" element={<Data />} />
           <Route path="/chat" element={<Chat isLoggedIn={isLoggedIn} />} />
           <Route
             path="/valuesarticle/:articleId"
@@ -106,6 +106,10 @@ function App() {
           />
           <Route
             path="/financearticle/:articleId"
+            element={<ArticleTemplate userId={userId} username={username} isLoggedIn={isLoggedIn} />}
+          />
+          <Route
+            path="/dataarticle/:articleId"
             element={<ArticleTemplate userId={userId} username={username} isLoggedIn={isLoggedIn} />}
           />
           <Route path="/login" element={<Login onLogin={handleLoginStatus} />} />

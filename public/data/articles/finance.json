@@ -1,97 +1,81 @@
 [
+
   {
-    "title": "Historia y Evolución de Majadahonda",
-    "subtitle": "De pueblo rural a ciudad moderna",
-    "link": "/article/historia-majadahonda",
-    "date": "2024-03-12",
-    "author": "Carlos Fernández",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda, una ciudad con raíces profundas en la historia de España, ha experimentado una transformación impresionante desde sus orígenes como un pequeño pueblo agrícola hasta convertirse en una de las localidades más prósperas de la Comunidad de Madrid.",
-        "bold": ["Majadahonda", "historia de España", "transformación", "Comunidad de Madrid"]
-      },
-      {
-        "type": "paragraph",
-        "text": "Durante siglos, Majadahonda fue conocida por sus tierras fértiles y su comunidad agrícola. Sin embargo, a finales del siglo XX, con la expansión de Madrid y la mejora de infraestructuras, la ciudad se convirtió en un enclave residencial de alto nivel, atrayendo a familias y profesionales en busca de calidad de vida.",
-        "bold": ["siglo XX", "expansión de Madrid", "infraestructuras", "enclave residencial"]
-      }
-    ]
-  },
-  {
-    "title": "El Mercado Inmobiliario en Majadahonda",
-    "subtitle": "Un paraíso para la inversión en vivienda",
-    "link": "/article/mercado-inmobiliario-majadahonda",
-    "date": "2024-03-10",
-    "author": "Laura Gómez",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda se ha consolidado como una de las áreas más exclusivas para la compra de vivienda en la Comunidad de Madrid. Con una combinación de espacios verdes, seguridad y servicios de alta calidad, esta ciudad se ha convertido en un destino ideal para familias y profesionales.",
-        "bold": ["Majadahonda", "exclusivas", "vivienda", "Comunidad de Madrid"]
-      },
-      {
-        "type": "paragraph",
-        "text": "El mercado inmobiliario ha mostrado una tendencia al alza en los últimos años, con un incremento en el precio del metro cuadrado debido a la alta demanda y la escasez de suelo disponible para nuevas construcciones.",
-        "bold": ["mercado inmobiliario", "precio del metro cuadrado", "demanda", "nuevas construcciones"]
-      }
-    ]
-  },
-  {
-    "title": "Gastronomía en Majadahonda",
-    "subtitle": "Los mejores restaurantes y bares de la ciudad",
-    "link": "/article/gastronomia-majadahonda",
-    "date": "2024-03-08",
-    "author": "Marta Ruiz",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda es un referente gastronómico dentro de la Comunidad de Madrid. Desde restaurantes con estrella Michelin hasta tabernas tradicionales, la oferta culinaria de la ciudad es variada y de alta calidad.",
-        "bold": ["Majadahonda", "gastronómico", "Comunidad de Madrid", "estrella Michelin"]
-      },
-      {
-        "type": "paragraph",
-        "text": "Entre los favoritos de los residentes se encuentran los asadores de carne, los bares de tapas en el centro y las terrazas con vistas, ideales para disfrutar de la cocina española en un entorno privilegiado.",
-        "bold": ["asadores", "bares de tapas", "cocina española", "entorno privilegiado"]
-      }
-    ]
-  },
-  {
-    "title": "Deporte y Ocio en Majadahonda",
-    "subtitle": "Las mejores actividades para disfrutar en la ciudad",
-    "link": "/article/deporte-ocio-majadahonda",
-    "date": "2024-03-05",
-    "author": "Diego López",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda es conocida por su gran oferta deportiva. Desde clubes de fútbol y hockey sobre hielo hasta gimnasios de última generación, la ciudad ofrece múltiples opciones para los amantes del deporte.",
-        "bold": ["Majadahonda", "deportiva", "fútbol", "hockey sobre hielo"]
-      },
-      {
-        "type": "paragraph",
-        "text": "El Monte del Pilar es otro gran atractivo de la zona, proporcionando un espacio natural perfecto para el senderismo, el ciclismo y la desconexión del ritmo urbano.",
-        "bold": ["Monte del Pilar", "espacio natural", "senderismo", "ciclismo"]
-      }
-    ]
-  },
-  {
-    "title": "Fiestas y Tradiciones de Majadahonda",
-    "subtitle": "Cultura y celebración en el corazón de la ciudad",
-    "link": "/article/fiestas-tradiciones-majadahonda",
-    "date": "2024-03-01",
-    "author": "Ana Pérez",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Las fiestas de Majadahonda reflejan la riqueza cultural de la ciudad. Entre las más destacadas se encuentran las Fiestas Patronales en honor al Santísimo Cristo de los Remedios, donde se celebran eventos religiosos, conciertos y ferias.",
-        "bold": ["Majadahonda", "fiestas", "Santísimo Cristo de los Remedios", "ferias"]
-      },
-      {
-        "type": "paragraph",
-        "text": "Además, las festividades incluyen encierros de toros, eventos gastronómicos y actividades para toda la familia, consolidando a Majadahonda como una ciudad vibrante y llena de tradición.",
-        "bold": ["encierros de toros", "eventos gastronómicos", "familia", "tradición"]
-      }
-    ]
-  }
+  "title": "El desamparo de la política local y el olvido de la tierra",
+  "subtitle": "La política local: cercanía, alma y realidad palpable",
+  "cover": "/data/articles/articles_resources/El_desamparo_de_la_politica_local_y_el_olvido_de_la_tierra.jpg",
+  "link": "/article/El_desamparo_de_la_politica_local_y_el_olvido_de_la_tierra",
+  "date": "2025-03-17",
+  "author": "Alfonso de Fuenteblanca Mojada",
+  "content": [
+    {
+      "type": "image",
+      "src": "/data/articles/articles_resources/El_desamparo_de_la_politica_local_y_el_olvido_de_la_tierra.jpg",
+      "alt": "Imagen representativa de la política local y sus retos"
+    },
+    {
+      "type": "paragraph",
+      "text": "La política local es, por antonomasia, la más noble de todas, pues es la que nace de la tierra misma y la que abraza la vida cotidiana de cada hombre y mujer de nuestra comunidad. Es, sin duda, la política que al alcance de todos permite que nuestras voces resuenen en las decisiones que nos afectan con mayor cercanía: la creación de espacios públicos, la mejora de nuestras escuelas, la accesibilidad de nuestras calles. En cada uno de estos pequeños actos hay una oportunidad de transformar el presente inmediato, de forjar un futuro tangible, marcado por la coherencia entre la voluntad popular y la acción política. Sin embargo, hemos ido perdiendo este privilegio, sumidos como estamos en una trama que, lejos de atender lo cercano, responde a intereses lejanos que nada tienen que ver con los verdaderos problemas del pueblo.",
+      "bold": ["la más noble de todas", "transformar el presente inmediato"]
+    },
+    {
+      "type": "subtitle",
+      "text": "El político local: un hombre de la tierra y no del cartel"
+    },
+    {
+      "type": "paragraph",
+      "text": "No hay nada más propio del político local que ser, a su vez, un hombre de la comunidad. No se trata simplemente de un funcionario destinado a gestionar el destino de una población, sino de alguien cuyas raíces están firmemente plantadas en el mismo suelo que pisan sus conciudadanos. Un político de esta naturaleza no es un extraño que se presenta a la urnas desde un mundo ajeno, sino un vecino más, cuyas acciones son consecuencia de su propio entorno. La política local, en su más pura esencia, requiere de la presencia de quien entiende sus deberes no como un cargo, sino como una vocación que brota de una relación diaria y profunda con las gentes y los espacios que componen su territorio.",
+      "bold": ["hombre de la comunidad", "vocación que brota de una relación diaria"]
+    },
+    {
+      "type": "paragraph",
+      "text": "Y si se dice que un político local ha de vivir en su municipio, ello no es una simple cuestión de residencia. Es una cuestión de cercanía humana, de ser testigo de las mismas dificultades que sufren los vecinos, de compartir en las plazas, en los mercados, en las calles, las preocupaciones, los anhelos y las esperanzas. Es, por encima de todo, un acto de humildad: un compromiso con la tierra que lo ha visto crecer y que lo ha acogido en su seno. Quien no camina a diario sobre la misma tierra que sus conciudadanos, difícilmente puede comprender sus más íntimas necesidades.",
+      "bold": ["cercanía humana", "un compromiso con la tierra"]
+    },
+    {
+      "type": "subtitle",
+      "text": "La perniciosa injerencia de las siglas nacionales en lo local"
+    },
+    {
+      "type": "paragraph",
+      "text": "A pesar de la cercanía inherente a la política local, hay algo que, con el paso de los años, ha ido distorsionando su carácter: la sombra alargada de las siglas nacionales. Si bien, en principio, los problemas urbanísticos, sociales o culturales de una ciudad o pueblo deberían ser resueltos con pragmatismo y visión, los intereses de los grandes partidos nacionales han ido impregnando las decisiones locales, desvirtuando su autenticidad. La política local, que por naturaleza debiera ser un reflejo fiel de los intereses inmediatos de la comunidad, se ve hoy en día atravesada por disputas ideológicas que son ajenas a la vida diaria de los ciudadanos.",
+      "bold": ["sombra alargada de las siglas nacionales", "pragmatismo y visión"]
+    },
+    {
+      "type": "paragraph",
+      "text": "Es lamentable que, en muchos casos, los candidatos locales no sean más que meros ecos de las luchas que se libran en las altas esferas del poder nacional. A menudo, sus propuestas no responden a las necesidades de la gente, sino a la imperiosa necesidad de ajustar las agendas locales a la línea dictada desde los partidos nacionales. Esta desfiguración, que se asume como natural, desvía la política local de su rumbo y la aleja del verdadero sentido que debe tener: atender y responder a lo inmediato, a lo cercano, a lo que se vive en cada barrio, en cada calle, en cada plaza.",
+      "bold": ["meros ecos de las luchas", "ajustar las agendas locales"]
+    },
+    {
+      "type": "subtitle",
+      "text": "La polarización nacional: un veneno que envenena la política local"
+    },
+    {
+      "type": "paragraph",
+      "text": "El auge de los extremismos, fenómeno que ha marcado la política nacional en tiempos recientes, ha penetrado también en la esfera local, donde debería prevalecer el entendimiento y el acuerdo. Si bien la política nacional se ha caracterizado por la confrontación, por la defensa intransigente de ideologías extremas, lo que caracteriza la política local es, o debiera ser, la búsqueda de soluciones comunes, de puntos de encuentro, de entendimiento mutuo. La política local no debe ser un reflejo de la fragmentación, sino un refugio donde se encuentren las voces de todos, sin más divisiones que las que brotan de la pluralidad misma de los ciudadanos.",
+      "bold": ["entendimiento y el acuerdo", "la búsqueda de soluciones comunes"]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sin embargo, la influencia de la política nacional ha conseguido que muchos debates locales se conviertan en extensiones de la guerra ideológica de los grandes partidos. Hemos asistido a la tragedia de ver cómo temas de salud, de educación o de urbanismo se han reducido a simples trampas de confrontación ideológica, mientras que la esencia misma de la política local, la que busca la mejora tangible del lugar, se ha visto relegada a un segundo plano. Es hora de recuperar la sensatez y de devolver a la política local el carácter que le corresponde, el de ser una política del acuerdo, del entendimiento, de la búsqueda de soluciones que reflejen los intereses genuinos de los habitantes.",
+      "bold": ["extensiones de la guerra ideológica", "devolver a la política local el carácter"]
+    },
+    {
+      "type": "subtitle",
+      "text": "La esperanza de una política local renovada"
+    },
+    {
+      "type": "paragraph",
+      "text": "A pesar de la oscuridad que pueda empañar en ocasiones el horizonte, no es tarde para retornar a la auténtica política local, aquella que responde a los intereses genuinos de la gente. Si algo caracteriza a las comunidades cercanas es su capacidad para reinventarse, para reconstruirse desde la base, sin dejarse influir por las ideologías ajenas. La política local debe ser, sobre todo, un ejercicio de participación, de compromiso y de acción concreta. No basta con discursos grandilocuentes o con promesas lejanas; hace falta una acción decidida, basada en la realidad y en las necesidades tangibles de los vecinos.",
+      "bold": ["retornar a la auténtica política local", "una acción decidida"]
+    },
+    {
+      "type": "paragraph",
+      "text": "Así, con un espíritu de colaboración y de responsabilidad compartida, podemos devolver a la política local la dignidad que merece. El camino es claro: volver a lo cercano, lo palpable, lo humano. Solo así, con pequeñas acciones sumadas, podremos restaurar el verdadero sentido de la política local y devolverle su capacidad transformadora, aquella que parte de la tierra, de la gente y de su voluntad común.",
+      "bold": ["espíritu de colaboración", "volver a lo cercano"]
+    }
+  ]
+}
+
+
 ]

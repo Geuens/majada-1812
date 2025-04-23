@@ -209,12 +209,12 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .section-container {
-        padding: 1rem 2%;
+        padding: 1rem 5%; /* Adjust padding for better spacing on smaller screens */
     }
 
     .article-list-item {
         font-size: 1rem;
-        max-height: 100px;
+        max-height: none; /* Removed max-height to allow content to expand */
     }
 
     .article-title {
@@ -229,20 +229,46 @@
         font-size: 1.5rem;
     }
 
+    .section-container h2:hover::after {
+    width: 35%;
+    opacity: 1;
+}
+
     .content-wrapper {
-        flex-direction: column; /* Stack the columns on smaller screens */
+        flex-direction: column; /* Stack the columns vertically on smaller screens */
+        gap: 1rem;
     }
 
     .article-list {
-        max-width: 100%;
+        max-width: 100%; /* Ensure the article list takes full width */
+        padding-right: 0;
     }
 
     .article-preview {
         max-width: 100%;
-        height: auto;
+        height: auto; /* Allow for content resizing */
+        position: relative;
+        margin-top: 1rem; /* Space between content */
     }
+
+    .preview-image {
+        max-width: 100%; /* Image should take up full width */
+        max-height: 300px; /* Limit the image height */
+    }
+
+    .preview-text {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        max-height: none; /* Removed max-height for better text display */
+    }
+
+    .cover-image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .article-date {
+        font-size: 1rem;
+        padding-left: 0.8rem;
+    }
+
 }
-
-
-
-

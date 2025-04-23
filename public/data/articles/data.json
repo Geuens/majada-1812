@@ -1,97 +1,161 @@
 [
   {
-    "title": "Historia y Evolución de Majadahonda",
-    "subtitle": "De pueblo rural a ciudad moderna",
-    "link": "/article/historia-majadahonda",
-    "date": "2024-03-12",
-    "author": "Carlos Fernández",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda, una ciudad con raíces profundas en la historia de España, ha experimentado una transformación impresionante desde sus orígenes como un pequeño pueblo agrícola hasta convertirse en una de las localidades más prósperas de la Comunidad de Madrid.",
-        "bold": ["Majadahonda", "historia de España", "transformación", "Comunidad de Madrid"]
-      },
-      {
-        "type": "paragraph",
-        "text": "Durante siglos, Majadahonda fue conocida por sus tierras fértiles y su comunidad agrícola. Sin embargo, a finales del siglo XX, con la expansión de Madrid y la mejora de infraestructuras, la ciudad se convirtió en un enclave residencial de alto nivel, atrayendo a familias y profesionales en busca de calidad de vida.",
-        "bold": ["siglo XX", "expansión de Madrid", "infraestructuras", "enclave residencial"]
-      }
-    ]
-  },
+  "title": "Actividades para Jóvenes en Majadahonda: ¡Diversión y Aprendizaje en Primavera!",
+  "subtitle": "La \"Primavera Joven\" llega a Majadahonda con una programación variada para jóvenes de hasta 30 años, con propuestas que combinan formación, entretenimiento y ocio saludable.",
+  "cover": "/data/articles/articles_resources/Actividades_para_Jóvenes_en_Majadahonda.jpg",
+  "link": "/article/Actividades_para_Jóvenes_en_Majadahonda",
+  "date": "2025-18-03",
+  "author": "Lázaro Majara y del Río",
+  "content": [
+    {
+      "type": "image",
+      "src": "/data/articles/articles_resources/Actividades_para_Jóvenes_en_Majadahonda.jpg",
+      "alt": "Jóvenes disfrutando de actividades de la Primavera Joven en Majadahonda"
+    },
+    {
+      "type": "paragraph",
+      "text": "El Ayuntamiento de Majadahonda ha preparado una agenda completa de actividades para esta primavera, diseñada específicamente para los jóvenes del municipio. Desde talleres de hip-hop hasta cursos de alemán, pasando por actividades de voluntariado y \"tardeos\" flamencos, la “Primavera Joven” ofrece un espacio único para el desarrollo personal y profesional de los jóvenes majariegos.",
+      "bold": ["Primavera Joven", "desarrollo personal y profesional"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Actividades Destacadas de la \"Primavera Joven\""
+    },
+    {
+      "type": "paragraph",
+      "text": "• **Taller de Hip-Hop y Street Dance**\n  *Fecha de inicio: 31 de marzo*\n  Una oportunidad para aprender y mejorar en baile urbano, desde coreografías hasta improvisación. Las sesiones serán los lunes de 19:30 a 20:30 horas y son totalmente gratuitas.\n\n• **Tardeos Flamencos y Conciertos**\n  Encuentros sociales para disfrutar de conciertos, escape rooms y talleres, en un ambiente relajado y saludable. Participación gratuita.\n\n• **Ruta Nocturna en Bici por el Monte del Pilar**\n  *Fecha: 7 de junio, de 21:00 a 23:00 horas*\n  Una ruta guiada por el Club Ciclista de Majadahonda, destinada a jóvenes de 11 a 17 años.\n\n• **Voluntariado Europeo: Sesiones Informativas**\n  *Fechas: 20 de marzo, 24 de abril y 22 de mayo, de 18:00 a 19:30 horas*\n  Para los jóvenes interesados en vivir una experiencia solidaria en Europa. Es necesario confirmar asistencia por correo electrónico.",
+      "bold": ["Taller de Hip-Hop", "Tardeos Flamencos", "Ruta Nocturna en Bici", "Voluntariado Europeo"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Inscripciones y Descuentos"
+    },
+    {
+      "type": "paragraph",
+      "text": "Las inscripciones pueden realizarse de manera presencial en el Centro Juvenil “Príncipe de Asturias” o por correo electrónico. Además, los jóvenes con carnet de familia numerosa o carnet plata disfrutarán de descuentos en aquellas actividades que impliquen un coste.\n\nLa mayoría de las actividades son gratuitas, lo que facilita la participación de todos los jóvenes, promoviendo una oferta inclusiva y accesible para todos.",
+      "bold": ["Centro Juvenil “Príncipe de Asturias”", "descuentos", "actividades gratuitas"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Más información y programación completa"
+    },
+    {
+      "type": "paragraph",
+      "text": "Para más detalles, consulta el folleto municipal disponible o contacta con el Ayuntamiento. Las actividades buscan ofrecer a los jóvenes un espacio de crecimiento personal, promoviendo tanto el ocio saludable como el desarrollo de habilidades y experiencias únicas.",
+      "bold": ["folleto municipal", "crecimiento personal", "ocio saludable"]
+    }
+  ]
+},
+{
+  "title": "Semana Cultural en Majadahonda",
+  "subtitle": "Poesía, música y teatro para todos los públicos.",
+  "cover": "/data/articles/articles_resources/semana-cultural-majadahonda.jpg",
+  "link": "/article/semana-cultural-majadahonda",
+  "date": "2025-17-03",
+  "author": "Lázaro Majara y el Río",
+  "content": [
+    {
+      "type": "image",
+      "src": "/data/articles/articles_resources/semana-cultural-majadahonda.jpg",
+      "alt": "Imagen evento cultural Majadahonda"
+    },
+    {
+      "type": "paragraph",
+      "text": "Majadahonda se prepara para una semana cultural cargada de eventos significativos que celebrarán la poesía, la música y el arte en diversos formatos. A continuación, se detalla la agenda completa:",
+      "bold": ["Majadahonda", "semana cultural", "poesía", "música", "arte"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Lunes 17 de marzo - Seminario de Literatura Infantil y Juvenil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Evento: Conferencia con Rafael Salmerón, Premio Nacional de Literatura Infantil y Juvenil 2022.\n\nHora: 19:00 horas.\n\nUbicación: Sala Polivalente de la Biblioteca Municipal ‘Francisco Umbral’ (C/ Las Norias, 39).\n\nAcceso: Libre hasta completar aforo.\n\nDescripción: El reconocido escritor e ilustrador Rafael Salmerón compartirá su experiencia y visión sobre la literatura infantil y juvenil. Este seminario está dirigido a todos los interesados en el género y es una excelente oportunidad para conocer de primera mano a uno de los grandes referentes del panorama literario español.",
+      "bold": ["Lunes 17 de marzo", "Rafael Salmerón", "Premio Nacional de Literatura Infantil y Juvenil 2022"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Viernes 21 de marzo - Día Mundial de la Poesía"
+    },
+    {
+      "type": "paragraph",
+      "text": "Evento: Recital poético 'Entre versos' con Lola Deán Guelbenzu y Eduardo Benítez Romero.\n\nHora: 19:00 horas.\n\nUbicación: Sala Polivalente de la Biblioteca Municipal ‘Francisco Umbral’.\n\nAcceso: Libre hasta completar aforo.\n\nDescripción: En el marco del Día Mundial de la Poesía, los poetas Lola Deán Guelbenzu y Eduardo Benítez Romero ofrecerán un recital a dúo, alternando sus voces en una noche de poesía y emociones. Además, la Escuela Municipal de Música ‘Enrique Granados’ participará con Luis Ricoy al piano y las voces de Raquel López de Sebastián y Agnethe Romer.",
+      "bold": ["Viernes 21 de marzo", "Día Mundial de la Poesía", "Lola Deán Guelbenzu", "Eduardo Benítez Romero"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Sábado 22 de marzo - Concierto del quinteto Spanish Brass"
+    },
+    {
+      "type": "paragraph",
+      "text": "Evento: Concierto del quinteto de metales Spanish Brass en su 35º aniversario.\n\nHora: 20:00 horas.\n\nUbicación: Teatro de la Casa de la Cultura ‘Carmen Conde’ (Plaza de Colón, s/n).\n\nEntradas: Disponibles en Giglon, con precios de 15 euros (planta baja) y 12 euros (planta alta).\n\nDescripción: Spanish Brass, galardonado con el Premio Nacional de Música 2020, celebra sus 35 años de trayectoria musical con un repaso de su carrera. El concierto incluirá tanto obras clásicas como nuevas composiciones y adaptaciones especiales creadas para la ocasión. Este espectáculo es una oportunidad única para disfrutar de la excelencia musical del quinteto.",
+      "bold": ["Sábado 22 de marzo", "Spanish Brass", "35º aniversario", "Premio Nacional de Música 2020"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Domingo 23 de marzo - Teatro para niños"
+    },
+    {
+      "type": "paragraph",
+      "text": "Evento: Obra de teatro ‘Mr Bo’, una historia de juegos de poder a través del clown.\n\nHora: 12:00 horas.\n\nUbicación: Teatro de la Casa de la Cultura ‘Carmen Conde’.\n\nEntradas: 5 euros (niños) y 7 euros (adultos). Pueden adquirirse en Giglon.\n\nDescripción: Mr Bo es un espectáculo familiar que utiliza las técnicas del clown para explorar el poder y sus límites, con una puesta en escena cargada de mímica y humor. La obra está recomendada para niños a partir de 4 años.",
+      "bold": ["Domingo 23 de marzo", "Mr Bo", "clown", "poder"]
+    }
+  ]
+},
+
+
   {
-    "title": "El Mercado Inmobiliario en Majadahonda",
-    "subtitle": "Un paraíso para la inversión en vivienda",
-    "link": "/article/mercado-inmobiliario-majadahonda",
-    "date": "2024-03-10",
-    "author": "Laura Gómez",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda se ha consolidado como una de las áreas más exclusivas para la compra de vivienda en la Comunidad de Madrid. Con una combinación de espacios verdes, seguridad y servicios de alta calidad, esta ciudad se ha convertido en un destino ideal para familias y profesionales.",
-        "bold": ["Majadahonda", "exclusivas", "vivienda", "Comunidad de Madrid"]
-      },
-      {
-        "type": "paragraph",
-        "text": "El mercado inmobiliario ha mostrado una tendencia al alza en los últimos años, con un incremento en el precio del metro cuadrado debido a la alta demanda y la escasez de suelo disponible para nuevas construcciones.",
-        "bold": ["mercado inmobiliario", "precio del metro cuadrado", "demanda", "nuevas construcciones"]
-      }
-    ]
-  },
-  {
-    "title": "Gastronomía en Majadahonda",
-    "subtitle": "Los mejores restaurantes y bares de la ciudad",
-    "link": "/article/gastronomia-majadahonda",
-    "date": "2024-03-08",
-    "author": "Marta Ruiz",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda es un referente gastronómico dentro de la Comunidad de Madrid. Desde restaurantes con estrella Michelin hasta tabernas tradicionales, la oferta culinaria de la ciudad es variada y de alta calidad.",
-        "bold": ["Majadahonda", "gastronómico", "Comunidad de Madrid", "estrella Michelin"]
-      },
-      {
-        "type": "paragraph",
-        "text": "Entre los favoritos de los residentes se encuentran los asadores de carne, los bares de tapas en el centro y las terrazas con vistas, ideales para disfrutar de la cocina española en un entorno privilegiado.",
-        "bold": ["asadores", "bares de tapas", "cocina española", "entorno privilegiado"]
-      }
-    ]
-  },
-  {
-    "title": "Deporte y Ocio en Majadahonda",
-    "subtitle": "Las mejores actividades para disfrutar en la ciudad",
-    "link": "/article/deporte-ocio-majadahonda",
-    "date": "2024-03-05",
-    "author": "Diego López",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Majadahonda es conocida por su gran oferta deportiva. Desde clubes de fútbol y hockey sobre hielo hasta gimnasios de última generación, la ciudad ofrece múltiples opciones para los amantes del deporte.",
-        "bold": ["Majadahonda", "deportiva", "fútbol", "hockey sobre hielo"]
-      },
-      {
-        "type": "paragraph",
-        "text": "El Monte del Pilar es otro gran atractivo de la zona, proporcionando un espacio natural perfecto para el senderismo, el ciclismo y la desconexión del ritmo urbano.",
-        "bold": ["Monte del Pilar", "espacio natural", "senderismo", "ciclismo"]
-      }
-    ]
-  },
-  {
-    "title": "Fiestas y Tradiciones de Majadahonda",
-    "subtitle": "Cultura y celebración en el corazón de la ciudad",
-    "link": "/article/fiestas-tradiciones-majadahonda",
-    "date": "2024-03-01",
-    "author": "Ana Pérez",
-    "content": [
-      {
-        "type": "paragraph",
-        "text": "Las fiestas de Majadahonda reflejan la riqueza cultural de la ciudad. Entre las más destacadas se encuentran las Fiestas Patronales en honor al Santísimo Cristo de los Remedios, donde se celebran eventos religiosos, conciertos y ferias.",
-        "bold": ["Majadahonda", "fiestas", "Santísimo Cristo de los Remedios", "ferias"]
-      },
-      {
-        "type": "paragraph",
-        "text": "Además, las festividades incluyen encierros de toros, eventos gastronómicos y actividades para toda la familia, consolidando a Majadahonda como una ciudad vibrante y llena de tradición.",
-        "bold": ["encierros de toros", "eventos gastronómicos", "familia", "tradición"]
-      }
-    ]
-  }
+  "title": "El Rayo Majadahonda resiste en el Cerro del Espino y suma un punto ante el Guadalajara",
+  "subtitle": "Empate trabajado en casa.",
+  "cover": "/data/articles/articles_resources/rayo-majadahonda-empate.png",
+  "link": "/article/rayo-majadahonda-empate",
+  "date": "2025-03-16",
+  "author": "Lázara Majara y el Río",
+  "content": [
+    {
+      "type": "image",
+      "src": "/data/articles/articles_resources/rayo-majadahonda-empate.png",
+      "alt": "Jugadores del Rayo Majadahonda en el partido contra el Guadalajara"
+    },
+    {
+      "type": "paragraph",
+      "text": "El Rayo Majadahonda peleó hasta el final en el Cerro del Espino y consiguió un empate sin goles frente al CD Guadalajara en un partido intenso, donde los de Jesús Arribas supieron sufrir ante uno de los equipos más fuertes del grupo.",
+      "bold": ["Rayo Majadahonda", "Cerro del Espino", "CD Guadalajara"]
+    },
+    {
+      "type": "subtitle",
+      "text": "Orden, esfuerzo y un punto más en el bolsillo"
+    },
+    {
+      "type": "paragraph",
+      "text": "El conjunto majariego planteó un partido serio desde el primer minuto, consciente del potencial ofensivo del rival. Con una defensa bien plantada y un centro del campo combativo, el Rayo logró frenar las acometidas del Guadalajara y mantener su portería a cero."
+    },
+    {
+      "type": "paragraph",
+      "text": "En la primera mitad, los visitantes tuvieron más posesión, pero apenas encontraron espacios ante una zaga local muy ordenada. Los nuestros buscaron el gol en transiciones rápidas y balones largos, aunque sin la puntería necesaria para romper el empate."
+    },
+    {
+      "type": "subtitle",
+      "text": "Segunda parte de sufrimiento y lucha"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tras el descanso, el Guadalajara salió con más intensidad, generando alguna ocasión peligrosa, pero la solidez defensiva del Rayo y un gran trabajo de nuestro portero evitaron el gol visitante. En los últimos minutos, el equipo empujó con el apoyo de la afición, pero no llegó el tanto de la victoria."
+    },
+    {
+      "type": "subtitle",
+      "text": "El Rayo sigue en la pelea"
+    },
+    {
+      "type": "paragraph",
+      "text": "Con este empate, el Rayo Majadahonda suma un punto que lo mantiene en la lucha por los puestos altos de la clasificación. Ahora toca pensar en el siguiente reto: el Talavera. Un partido clave para seguir soñando con los puestos de ascenso."
+    },
+    {
+      "type": "paragraph",
+      "text": "¡Vamos, Rayo! ¡Seguimos luchando! 🔴⚪"
+    }
+  ]
+}
+
+
 ]

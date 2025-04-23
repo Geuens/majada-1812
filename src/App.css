@@ -196,6 +196,7 @@ nav a:hover {
     color: #333333; /* A softer black for a more modern look */
     text-align: center; /* Center-align the title for focus */
     margin: 0.5rem auto; /* Balance spacing above and below */
+    margin-top: 2.5rem;
     padding: 0.8rem 1rem; /* Add a bit more padding for touch-friendly design */
     transition: all 0.4s ease-in-out; /* Smooth animations for a polished feel */
   }
@@ -208,9 +209,6 @@ nav a:hover {
     padding: 0.2rem 0.5rem;
   }
 
-  .title-fixed  {
-    display: none; /* Hide non-fixed title */
-  }
 
   .login-button {
     top: 10px;
@@ -235,7 +233,7 @@ nav a:hover {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
