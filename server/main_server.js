@@ -4,7 +4,6 @@ const cors = require('cors');
 const winston = require('winston');
 const logger = require('./utils/logger');
 const dotenv = require('dotenv');
-const connectWithRetry = require('./services/mongoConnection');
 const userRoutes = require('./routes/userRoutes');
 const portfolioRoutes = require('./routes/portfolioRoutes');
 const commentRoutes = require('./routes/commentRoutes'); // Import comment routes
@@ -19,8 +18,6 @@ const app = express();
 app.use(cors({ origin: process.env.CORS_ORIGIN || 'http://localhost:3000' }));
 app.use(bodyParser.json());
 
-// MongoDB Connection
-connectWithRetry(logger);
 
 // Routes
 app.use('/auth', userRoutes);

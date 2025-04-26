@@ -55,7 +55,7 @@ dist/
 *.err
 
 # dotenv environment variable files
-.env
+server/.env
 .env.*.local
 
 # MacOS system files

@@ -248,7 +248,7 @@
         max-width: 100%;
         height: auto; /* Allow for content resizing */
         position: relative;
-        margin-top: 1rem; /* Space between content */
+        margin-top: 0.5rem; /* Space between content */
     }
 
     .preview-image {
