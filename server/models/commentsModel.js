@@ -84,6 +84,14 @@ const Comment = sequelize.define('comments', {
   tableName: 'comments', // Ensure the table name is correctly mapped
 });
 
+Comment.sync({ alter: true })
+  .then(() => {
+    console.log('✅ Comments table synced.');
+  })
+  .catch((error) => {
+    console.error('❌ Failed to sync Comments table:', error);
+  });
+
 module.exports = Comment;
 
 
