@@ -13,7 +13,8 @@ const sequelize = new Sequelize({
     ssl: {
       require: true,
       rejectUnauthorized: false,  // allow self-signed certificates
-    }
+        },
+  },
 });
 
 console.log('Environment Variables:', process.env);
