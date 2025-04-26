@@ -7,13 +7,15 @@ function CommentTemplate({ articleId, articleType }) {
     const [collapsedReplies, setCollapsedReplies] = useState({});
     const [userIdAndUsername, setUserIdAndUsername] = useState(''); // One field for userId and username
 
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';  // Fallback to local if not set
+
     useEffect(() => {
         fetchComments();
     }, [articleId, articleType]);
 
     const fetchComments = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/comments/article/${articleType}/${articleId}/comments`);
+            const response = await fetch(`${BACKEND_URL}/api/comments/article/${articleType}/${articleId}/comments`);
             const data = await response.json();
             setComments(data.comments || []);
         } catch (error) {
@@ -75,7 +77,7 @@ function CommentTemplate({ articleId, articleType }) {
 
         console.log('Posting new comment...');
         try {
-            const response = await fetch(`http://localhost:5000/api/comments/article/${articleId}/comment`, {
+            const response = await fetch(`${BACKEND_URL}/api/comments/article/${articleId}/comment`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -144,3 +146,4 @@ function CommentTemplate({ articleId, articleType }) {
 }
 
 export default CommentTemplate;
+
