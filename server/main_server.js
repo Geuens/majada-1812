@@ -15,7 +15,21 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: process.env.CORS_ORIGIN }));
+const allowedOrigins = [
+  'http://localhost:3000',  // Development
+  'https://majada1812.com', // Production
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true); // Allow the origin
+    } else {
+      callback(new Error('Not allowed by CORS')); // Reject the origin
+    }
+  }
+}));
+
 app.use(bodyParser.json());
 
 
