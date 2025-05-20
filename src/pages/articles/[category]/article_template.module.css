@@ -1,0 +1,125 @@
+/* Center the container */
+.talent-container {
+    font-family: 'Markazi Text', serif; /* Updated to 'Markazi' for general content */
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 60%;
+    margin: 20px auto; /* Reduced margin for less white space */
+    padding-top:20px;
+    padding-right: 70px; /* Reduced padding for less space */
+    padding-left: 70px; /* Reduced padding for less space */
+    paddin-bottom: 40px;
+}
+
+/* Title styling */
+.talent-title {
+    margin-bottom: 0.3rem;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Markazi Text", sans-serif; /* 'Sono' for the title */
+    font-size: 2.2rem;
+    color: #444; /* Blue color */
+    position: relative;
+    padding-bottom: 3px;
+}
+
+/* Creative underline effect */
+.talent-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%; /* Center the underline */
+    transform: translateX(-50%); /* Adjust position to make sure it is exactly centered */
+    width: 80%;
+    height: 2px;
+    background: #0056b3; /* Gradient underline */
+    border-radius: 0px;
+    transition: width 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0.9;
+}
+
+/* On hover, extend underline */
+.talent-title:hover::after {
+    width: 110%;
+    opacity: 1;
+}
+
+
+/* Subtitle styling */
+.talent-subtitle {
+    color: #0056b3; /* Dark gray for a more subtle look */
+    font-family: 'Markazi Text', serif; /* Consistent font */
+    font-size: 1.5rem; /* Slightly bigger font size */
+    text-align: justify;
+}
+
+/* Content area */
+.talent-content {
+    line-height: 1.5; /* Slightly reduced line-height for tighter text */
+    color: #444;
+    font-family: 'Markazi Text', serif; /* Markazi for all content */
+    text-align: justify; /* Justifies the content */
+    font-size: 1.3rem; /* Slightly bigger font size */
+}
+
+.line-break {
+  display: block; /* Makes it act like a block-level element */
+  margin-bottom: 0.7rem; /* Adjust the height here */
+}
+
+/* Container to keep the image on the left */
+.talent-image {
+    float: left; /* Align the image to the left */
+    width: 50%; /* Make the image take up 50% of the container */
+    padding-left: 0px; /* Padding on left and right */
+    padding-right: 25px; /* Padding on left and right */
+
+}
+
+/* Styling for images in the article */
+.talent-image img {
+    width: 100%; /* Ensure image width is 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 3px; /* Optional: Add a slight border-radius for rounded corners */
+}
+/* Paragraph styling */
+.talent-content p {
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+/* Styling for links */
+.talent-content a {
+    color: #0056b3; /* Blue color for consistency */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.talent-content a:hover {
+    color: #003f6b; /* Darker blue for hover effect */
+    text-decoration: underline;
+}
+
+.talent-content a:hover {
+    color: #003f6b; /* Darker blue for hover effect */
+    text-decoration: underline;
+}
+
+.author-style {
+    text-align: right;
+    font-size: 1.1rem;
+    color: #888;
+    line-height: 0.5;
+
+}
+
+.article-date-template {
+    text-align: right;
+    font-size: 1.1rem;
+    color: #888;
+    line-height: 0.2;
+
+}
+
+
+
+
