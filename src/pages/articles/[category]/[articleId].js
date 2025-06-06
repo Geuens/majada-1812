@@ -8,33 +8,45 @@ const categories = ['finance', 'data', 'values']; // Añade aquí todas tus cate
 
 export async function getStaticPaths() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  console.log('🛠️ [getStaticPaths] Using baseUrl:', baseUrl);
+
   let paths = [];
 
   for (const category of categories) {
+    const url = `${baseUrl}/data/articles/${category}.json`;
+    console.log(`📦 Fetching category [${category}] from URL: ${url}`);
+
     try {
-      const res = await fetch(`${baseUrl}/data/articles/${category}.json`);
+      const res = await fetch(url);
+
       if (!res.ok) {
-        console.error(`Failed to fetch ${category}.json: ${res.status} ${res.statusText}`);
+        console.error(`❌ Failed to fetch ${category}.json: ${res.status} ${res.statusText}`);
         continue;
       }
 
       const articles = await res.json();
-      if (!articles || articles.length === 0) continue;
+      console.log(`✅ Fetched ${articles.length} articles for [${category}]`);
 
-      paths = paths.concat(
-        articles
-          .filter((article) => article.category && article.id !== undefined)
-          .map((article) => ({
-            params: {
-              category: article.category,
-              articleId: article.id.toString(),
-            },
-          }))
-      );
+      if (!Array.isArray(articles) || articles.length === 0) continue;
+
+      const categoryPaths = articles
+        .filter((article) => article.category && article.id !== undefined)
+        .map((article) => ({
+          params: {
+            category: article.category,
+            articleId: article.id.toString(),
+          },
+        }));
+
+      console.log(`➡️  Added ${categoryPaths.length} paths from [${category}]`);
+      paths = paths.concat(categoryPaths);
+
     } catch (error) {
-      console.error(`Error fetching articles for category ${category}:`, error);
+      console.error(`💥 Error fetching articles for [${category}]:`, error);
     }
   }
+
+  console.log('🚀 Final generated paths:', paths);
 
   return {
     paths,
@@ -45,17 +57,22 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const { category, articleId } = params;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const url = `${baseUrl}/data/articles/${category}.json`;
+
+  console.log('📄 [getStaticProps] Loading article', { category, articleId });
+  console.log('🔗 Fetching from:', url);
 
   try {
-    const res = await fetch(`${baseUrl}/data/articles/${category}.json`);
+    const res = await fetch(url);
+
     if (!res.ok) {
-      console.error(`Failed to fetch ${category}.json: ${res.status} ${res.statusText}`);
+      console.error(`❌ Failed to fetch ${category}.json: ${res.status} ${res.statusText}`);
       return { notFound: true };
     }
 
     const articles = await res.json();
     if (!articles || articles.length === 0) {
-      console.error(`❌ No articles found in ${category}.json`);
+      console.error(`📭 No articles found in ${category}.json`);
       return { notFound: true };
     }
 
@@ -64,18 +81,20 @@ export async function getStaticProps({ params }) {
     );
 
     if (!article) {
-      console.error('❌ Article not found');
+      console.error('❌ Article not found in JSON list');
       return { notFound: true };
     }
 
+    console.log('✅ Article found:', article.title);
     return {
       props: { article },
     };
   } catch (error) {
-    console.error('Error fetching article:', error);
+    console.error('💥 Error fetching article data:', error);
     return { notFound: true };
   }
 }
+
 
 const ArticlePage = ({ article }) => {
   if (!article) {
