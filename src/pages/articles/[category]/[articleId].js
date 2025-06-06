@@ -7,7 +7,7 @@ import styles from './article_template.module.css';
 const categories = ['finance', 'data', 'values']; // Añade aquí todas tus categorías y archivos JSON disponibles
 
 export async function getStaticPaths() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   let paths = [];
 
   for (const category of categories) {
@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { category, articleId } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
   try {
     const res = await fetch(`${baseUrl}/data/articles/${category}.json`);
