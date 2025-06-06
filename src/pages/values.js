@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Values from '../components/pages_not_pages/Values';
-import fs from 'fs/promises';
-import path from 'path';
 
 export async function getStaticProps() {
-  try {
-    const filePath = path.join(process.cwd(), 'public', 'data', 'articles', 'values.json');
-    const jsonData = await fs.readFile(filePath, 'utf-8');
-    const valuesArticles = JSON.parse(jsonData);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
+  try {
+    const res = await fetch(`${baseUrl}/data/articles/values.json`);
+    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
+
+    const valuesArticles = await res.json();
     return { props: { valuesArticles } };
   } catch (error) {
-    console.error('Error reading valuesArticles:', error);
+    console.error('Error fetching valuesArticles:', error);
     return { props: { valuesArticles: [] } };
   }
 }
@@ -69,3 +69,4 @@ export default function ValuesPage({ valuesArticles }) {
     </div>
   );
 }
+
