@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Finance from '../components/pages_not_pages/Finance';
 
 export async function getStaticProps() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
   try {
     const res = await fetch(`${baseUrl}/data/articles/finance.json`);
