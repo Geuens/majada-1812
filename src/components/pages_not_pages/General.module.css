@@ -95,8 +95,8 @@
 /* Text inside the preview column */
 .preview-text {
     margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top:-1rem;
+    margin-left: 2rem;
+    margin-top:2rem;
     font-size: 1rem;
     color: #333;
     text-align: justify;

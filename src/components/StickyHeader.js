@@ -1,4 +1,4 @@
-// components/StickyHeader.js
+// src/components/StickyHeader.js
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
@@ -28,21 +28,34 @@ const StickyHeader = () => {
   }, [isFixed]);
 
   return (
-    <header className={`app-header ${isFixed ? 'header-fixed' : ''}`} style={{ paddingTop: isFixed ? `${navHeight}px` : '0' }}>
-      <h1 className={`wsj-title ${isFixed ? 'title-fixed' : ''}`}>majada 1812</h1>
-      <h2 className={`wsj-sub-title ${isFixed ? 'sub-title-hidden' : ''}`}>Ad Virtutem, Ad Libertas</h2>
+    <header
+      className={`app-header ${isFixed ? 'header-fixed' : ''}`}
+      style={{ paddingTop: isFixed ? `${navHeight}px` : '0' }}
+    >
+      <div className="header-inner">
+        <div
+          className="header-titles"
+          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+        >
+          <h1 className={`wsj-title ${isFixed ? 'title-fixed' : ''}`}>majada 1812</h1>
+          <h2 className={`wsj-sub-title ${isFixed ? 'sub-title-hidden' : ''}`}>
+            Ad Virtutem, Ad Libertas
+          </h2>
+        </div>
 
-      <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
-        <Link href="/values">Noticias</Link>
-        <Link href="/finance">Opinión</Link>
-        <Link href="/data">Cultura/Deporte</Link>
-      </nav>
+        <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
+          <Link href="/values">Noticias</Link>
+          <Link href="/finance">Opinión</Link>
+          <Link href="/data">Cultura/Deporte</Link>
+        </nav>
 
-      <div className="chat-link">
-        <Link href="/chat">@Contacto</Link>
+        <div className="chat-link">
+          <Link href="/chat">@Contacto</Link>
+        </div>
       </div>
     </header>
   );
 };
 
 export default StickyHeader;
+

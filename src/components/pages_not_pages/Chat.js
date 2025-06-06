@@ -1,5 +1,7 @@
 import React from 'react';
 import chatStyles from './Chat.module.css';
+import styles from './General.module.css';
+
 
 function Chat() {
   return (

@@ -1,110 +1,108 @@
-/* General styling for the section */
 .chat-section {
     font-family: 'Markazi Text', serif;
     background-color: #fff;
     border-radius: 5px;
-    max-width: 60%;
+    max-width: 80%;
     margin: 20px auto;
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 500px;
-    padding-bottom: 40px;
+    padding: 20px 40px 40px 40px;
+    box-sizing: border-box;
 }
 
-/* Title styling */
 .chat-title {
-    margin-bottom: 0.3rem;
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Sono', serif;
-    font-size: 2.2rem;
-    color: #444;
-    position: relative;
-    padding-bottom: 3px;
+  margin-bottom: 0.5rem;
+  margin-top: 15px;
+  text-align: left;
+  font-family: "Sono", sans-serif;
+  font-size: 1.6rem;
+  color: #0056b3;
+  position: relative;
+  display: block; /* Make sure it takes full width */
+  padding-bottom: 3px;
 }
 
-/* Creative underline effect */
 .chat-title::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 2px;
-    background: #0056b3;
-    border-radius: 0px;
-    transition: width 0.3s ease-out, opacity 0.3s ease-out;
-    opacity: 0.9;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px; /* Fixed width */
+  height: 2px;
+  background: linear-gradient(135deg, #0056b3, #002f6c);
+  transition: width 0.3s ease-out, opacity 0.3s ease-out;
+  border-radius: 2px;
 }
 
-/* On hover, extend underline */
 .chat-title:hover::after {
-    width: 110%;
-    opacity: 1;
+  width: 15%;
+  opacity: 1;
 }
 
-/* Main Section Title (e.g. "Nuestros Fundadores") */
 .main-title {
     font-family: 'Sono', serif;
     font-size: 2rem;
     color: #444;
-    margin-bottom: 1rem;
+    margin-top: 2rem;      /* Añadido para separar del título anterior */
+    margin-bottom: 1.5rem; /* Más espacio abajo */
     border-bottom: 2px solid #0056b3;
     padding-bottom: 0.5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    max-width: 70%; /* Adjust this value as needed */
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-
-/* Founder Title Styling */
 .founder-title {
     font-family: 'Sono', serif;
     font-size: 1.3rem;
     color: #444;
-    margin-bottom: 1rem;
+    margin-top: 3rem;      /* Más espacio arriba para separar entre fundadores */
+    margin-bottom: 3rem; /* Más espacio abajo */
     border-bottom: 2px solid #0056b3;
     padding-bottom: 0.5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    max-width: 70%; /* Adjust this value as needed */
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-/* Content styling */
 .info-content {
     line-height: 1.5;
     color: #444;
     font-family: 'Markazi Text', serif;
     font-size: 1.3rem;
     text-align: justify;
-    margin-bottom: 1.5rem;
-    padding-left:9rem;
-    padding-right:9rem;
-    line-height: 1; /* Adjust this value to reduce line height */
+    margin-bottom: 1.5rem;  /* Más espacio entre párrafos */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* Optional responsive layout for smaller screens */
+/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .chat-section {
-        padding: 2rem 1rem;
+        padding: 1rem 1rem 2rem 1rem;
+        max-width: 100%;
     }
 
     .chat-title {
         font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     .main-title, .founder-title {
         font-size: 1.6rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .info-content {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 1.5rem;
     }
 }
+

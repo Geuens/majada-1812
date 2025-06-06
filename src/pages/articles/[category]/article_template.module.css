@@ -8,7 +8,8 @@
     padding-top:20px;
     padding-right: 70px; /* Reduced padding for less space */
     padding-left: 70px; /* Reduced padding for less space */
-    paddin-bottom: 40px;
+    padding-bottom: 1px;
+
 }
 
 /* Title styling */
@@ -119,6 +120,8 @@
     line-height: 0.2;
 
 }
+
+
 
 
 

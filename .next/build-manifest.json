@@ -28,21 +28,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/articles/[category]/[articleId].js"
     ],
-    "/chat": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/chat.js"
-    ],
-    "/data": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/data.js"
-    ],
-    "/finance": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/finance.js"
-    ],
     "/values": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
