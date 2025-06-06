@@ -1,0 +1,107 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/articles/[category]/[articleId]",
+      "regex": "^/articles/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory",
+        "nxtParticleId": "nxtParticleId"
+      },
+      "namedRegex": "^/articles/(?<nxtPcategory>[^/]+?)/(?<nxtParticleId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/chat",
+      "regex": "^/chat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/chat(?:/)?$"
+    },
+    {
+      "page": "/data",
+      "regex": "^/data(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/data(?:/)?$"
+    },
+    {
+      "page": "/finance",
+      "regex": "^/finance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/finance(?:/)?$"
+    },
+    {
+      "page": "/values",
+      "regex": "^/values(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/values(?:/)?$"
+    }
+  ],
+  "dataRoutes": [
+    {
+      "page": "/",
+      "dataRouteRegex": "^/_next/data/WTMDWxGKQSK1Y4jj0kqmF/index\\.json$"
+    },
+    {
+      "page": "/articles/[category]/[articleId]",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory",
+        "nxtParticleId": "nxtParticleId"
+      },
+      "dataRouteRegex": "^/_next/data/WTMDWxGKQSK1Y4jj0kqmF/articles/([^/]+?)/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/WTMDWxGKQSK1Y4jj0kqmF/articles/(?<nxtPcategory>[^/]+?)/(?<nxtParticleId>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/chat",
+      "dataRouteRegex": "^/_next/data/WTMDWxGKQSK1Y4jj0kqmF/chat\\.json$"
+    },
+    {
+      "page": "/data",
+      "dataRouteRegex": "^/_next/data/WTMDWxGKQSK1Y4jj0kqmF/data\\.json$"
+    },
+    {
+      "page": "/finance",
+      "dataRouteRegex": "^/_next/data/WTMDWxGKQSK1Y4jj0kqmF/finance\\.json$"
+    },
+    {
+      "page": "/values",
+      "dataRouteRegex": "^/_next/data/WTMDWxGKQSK1Y4jj0kqmF/values\\.json$"
+    }
+  ],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

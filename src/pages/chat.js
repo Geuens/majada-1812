@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Chat from '../components/pages_not_pages/Chat'; // Ajusta la ruta si hace falta
 
 export async function getStaticProps() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
   try {
     const res = await fetch(`${baseUrl}/data/articles/chat.json`);
