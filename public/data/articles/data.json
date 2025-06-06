@@ -1,6 +1,8 @@
 [
   {
-  "title": "Actividades para Jóvenes en Majadahonda: ¡Diversión y Aprendizaje en Primavera!",
+        "id": 0,
+    "category": "data",
+    "title": "Actividades para Jóvenes en Majadahonda: ¡Diversión y Aprendizaje en Primavera!",
   "subtitle": "La \"Primavera Joven\" llega a Majadahonda con una programación variada para jóvenes de hasta 30 años, con propuestas que combinan formación, entretenimiento y ocio saludable.",
   "cover": "/data/articles/articles_resources/Actividades_para_Jóvenes_en_Majadahonda.jpg",
   "link": "/article/Actividades_para_Jóvenes_en_Majadahonda",
@@ -47,6 +49,8 @@
   ]
 },
 {
+      "id": 1,
+    "category": "data",
   "title": "Semana Cultural en Majadahonda",
   "subtitle": "Poesía, música y teatro para todos los públicos.",
   "cover": "/data/articles/articles_resources/semana-cultural-majadahonda.jpg",
@@ -105,7 +109,10 @@
 
 
   {
-  "title": "El Rayo Majadahonda resiste en el Cerro del Espino y suma un punto ante el Guadalajara",
+
+        "id": 2,
+    "category": "data",
+    "title": "El Rayo Majadahonda resiste en el Cerro del Espino y suma un punto ante el Guadalajara",
   "subtitle": "Empate trabajado en casa.",
   "cover": "/data/articles/articles_resources/rayo-majadahonda-empate.png",
   "link": "/article/rayo-majadahonda-empate",

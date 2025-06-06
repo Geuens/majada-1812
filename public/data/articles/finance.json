@@ -1,12 +1,14 @@
 [
 
   {
-  "title": "El desamparo de la política local y el olvido de la tierra",
-  "subtitle": "La política local: cercanía, alma y realidad palpable",
-  "cover": "/data/articles/articles_resources/El_desamparo_de_la_politica_local_y_el_olvido_de_la_tierra.jpg",
-  "link": "/article/El_desamparo_de_la_politica_local_y_el_olvido_de_la_tierra",
-  "date": "2025-03-17",
-  "author": "Alfonso de Fuenteblanca Mojada",
+    "id": 0,
+    "category": "finance",
+    "title": "El desamparo de la política local y el olvido de la tierra",
+    "subtitle": "La política local: cercanía, alma y realidad palpable",
+    "cover": "/data/articles/articles_resources/El_desamparo_de_la_politica_local_y_el_olvido_de_la_tierra.jpg",
+    "link": "/article/El_desamparo_de_la_politica_local_y_el_olvido_de_la_tierra",
+    "date": "2025-03-17",
+    "author": "Alfonso de Fuenteblanca Mojada",
   "content": [
     {
       "type": "image",

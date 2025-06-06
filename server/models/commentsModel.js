@@ -9,12 +9,7 @@ const sequelize = new Sequelize({
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
   port: process.env.POSTGRES_PORT,
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false,  // allow self-signed certificates
-        },
-  },
+
 });
 
 console.log('Environment Variables:', process.env);

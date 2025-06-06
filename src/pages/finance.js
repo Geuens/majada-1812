@@ -1,5 +1,71 @@
+import React, { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import Finance from '../components/pages_not_pages/Finance';
 
-export default function FinancePage() {
-  return <Finance />;
+export async function getStaticProps() {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+
+  try {
+    const res = await fetch(`${baseUrl}/data/articles/finance.json`);
+    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
+
+    const financeArticles = await res.json();
+    return { props: { financeArticles } };
+  } catch (error) {
+    console.error('Error fetching financeArticles:', error);
+    return { props: { financeArticles: [] } };
+  }
+}
+
+export default function FinancePage({ financeArticles }) {
+  const [isFixed, setIsFixed] = useState(false);
+  const [navHeight, setNavHeight] = useState(0);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    if (navRef.current) {
+      setNavHeight(navRef.current.offsetHeight);
+    }
+
+    const handleScroll = () => {
+      if (navRef.current) {
+        const navTop = navRef.current.offsetTop;
+        if (window.pageYOffset > navTop && !isFixed) {
+          setIsFixed(true);
+        } else if (window.pageYOffset <= navTop && isFixed) {
+          setIsFixed(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isFixed]);
+
+  return (
+    <div className="App" style={{ paddingTop: isFixed ? `${navHeight}px` : '0' }}>
+      <header className={`app-header ${isFixed ? 'header-fixed' : ''}`}>
+        <h1 className={`wsj-title ${isFixed ? 'title-fixed' : ''}`}>majada 1812</h1>
+        <h2 className={`wsj-sub-title ${isFixed ? 'sub-title-hidden' : ''}`}>Ad Virtutem, Ad Libertas</h2>
+
+        <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
+          <Link href="/values">Noticias</Link>
+          <Link href="/finance">Opinión</Link>
+          <Link href="/data">Cultura/Deporte</Link>
+        </nav>
+
+        <div className="chat-link">
+          <Link href="/chat">@Contacto</Link>
+        </div>
+      </header>
+
+      <Finance financeArticles={financeArticles} />
+
+      <div className="container-sentence">
+        <p className="sentence">
+          - El análisis correcto trae sabiduría al lector -
+        </p>
+      </div>
+    </div>
+  );
 }

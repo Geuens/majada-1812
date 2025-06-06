@@ -2,5 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/articles/[category]/[articleId]": "pages/articles/[category]/[articleId].js"
+  "/articles/[category]/[articleId]": "pages/articles/[category]/[articleId].js",
+  "/finance": "pages/finance.js",
+  "/values": "pages/values.js",
+  "/data": "pages/data.js",
+  "/chat": "pages/chat.js"
 }

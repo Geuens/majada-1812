@@ -4,36 +4,42 @@ import StickyHeader from '../../../components/StickyHeader';
 import CommentTemplate from '../../../components/pages_not_pages/CommentTemplate';
 import styles from './article_template.module.css';
 
+const categories = ['finance', 'data', 'values']; // Añade aquí todas tus categorías y archivos JSON disponibles
+
 export async function getStaticPaths() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  let paths = [];
 
-  try {
-    const res = await fetch(`${baseUrl}/data/articles/values.json`);
-    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
+  for (const category of categories) {
+    try {
+      const res = await fetch(`${baseUrl}/data/articles/${category}.json`);
+      if (!res.ok) {
+        console.error(`Failed to fetch ${category}.json: ${res.status} ${res.statusText}`);
+        continue;
+      }
 
-    const articles = await res.json();
-    if (!articles || articles.length === 0) {
-      console.error('❌ No articles found in values.json');
-      return { paths: [], fallback: false };
+      const articles = await res.json();
+      if (!articles || articles.length === 0) continue;
+
+      paths = paths.concat(
+        articles
+          .filter((article) => article.category && article.id !== undefined)
+          .map((article) => ({
+            params: {
+              category: article.category,
+              articleId: article.id.toString(),
+            },
+          }))
+      );
+    } catch (error) {
+      console.error(`Error fetching articles for category ${category}:`, error);
     }
-
-    const paths = articles
-      .filter((article) => article.category && article.id !== undefined)
-      .map((article) => ({
-        params: {
-          category: article.category,
-          articleId: article.id.toString(),
-        },
-      }));
-
-    return {
-      paths,
-      fallback: false,
-    };
-  } catch (error) {
-    console.error('Error fetching articles:', error);
-    return { paths: [], fallback: false };
   }
+
+  return {
+    paths,
+    fallback: false,
+  };
 }
 
 export async function getStaticProps({ params }) {
@@ -41,12 +47,15 @@ export async function getStaticProps({ params }) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
   try {
-    const res = await fetch(`${baseUrl}/data/articles/values.json`);
-    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
+    const res = await fetch(`${baseUrl}/data/articles/${category}.json`);
+    if (!res.ok) {
+      console.error(`Failed to fetch ${category}.json: ${res.status} ${res.statusText}`);
+      return { notFound: true };
+    }
 
     const articles = await res.json();
     if (!articles || articles.length === 0) {
-      console.error('❌ No articles found in values.json');
+      console.error(`❌ No articles found in ${category}.json`);
       return { notFound: true };
     }
 
@@ -60,9 +69,7 @@ export async function getStaticProps({ params }) {
     }
 
     return {
-      props: {
-        article,
-      },
+      props: { article },
     };
   } catch (error) {
     console.error('Error fetching article:', error);
@@ -130,7 +137,6 @@ const ArticlePage = ({ article }) => {
         )}
       </div>
 
-      {/* Sección de comentarios */}
       <div className={styles['comments-wrapper']}>
         <CommentTemplate articleId={article.id} articleType={article.category} />
       </div>

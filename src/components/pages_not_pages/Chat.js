@@ -1,29 +1,28 @@
 import React from 'react';
-import './Chat.css';
-import './General.css';
+import chatStyles from './Chat.module.css';
 
 function Chat() {
   return (
-    <div className="section-container">
-      <h2>Contacto</h2>
+    <div className={chatStyles['chat-section']}>
+      <h2 className={chatStyles['chat-title']}>Contacto</h2>
 
-      <div className="chat-info-container">
-        <h1 className="main-title"><strong>¿Quienes somos?</strong></h1>
+      <div>
+        <h1 className={chatStyles['main-title']}><strong>¿Quienes somos?</strong></h1>
 
-        <p className="info-content">
+        <p className={chatStyles['info-content']}>
           <strong>Correo electrónico:</strong> majada1812@gmail.com
         </p>
-        <p className="info-content">
+        <p className={chatStyles['info-content']}>
           <strong>Dirección:</strong> Alonso de Fuenteblanca Mojada
         </p>
-        <p className="info-content">
+        <p className={chatStyles['info-content']}>
           <strong>Redactores:</strong> Alonso de Fuenteblanca Mojada y Lázaro Majara y el Río, son los pseudónimos de los dos majariegos responsables de la dirección y redacción de majada 1812. Los vecinos prefieren mantener su identidad en el anonimato por el momento.
         </p>
 
-        <h1 className="founder-title"><strong>Alonso de Fuenteblanca Mojada</strong></h1>
-        <div className="info-content">
+        <h1 className={chatStyles['founder-title']}><strong>Alonso de Fuenteblanca Mojada</strong></h1>
+        <div className={chatStyles['info-content']}>
           <p>
-            Alonso de Fuenteblanca Mojada nació en Madrid el <strong>15 de mayo de 1984</strong>. Tras terminar sus estudios en <strong>Historia del Arte</strong> en la Universidad Complutense de Madrid en 2007, se dedicó a la restauración de obras de arte.
+            Alonso de Fuenteblanca Mojada nació en Madrid el <strong>15 de mayo de 1984</strong>. Tras terminar sus estudios en <strong>Historia del Arte</strong> en la Universidad Complutense de Madrid en 2007, se dedica a la restauración de obras de arte.
           </p>
           <p>
             En 2010, dejó España y viajó a Camerún, donde pasó dos años viviendo con una tribu de pigmeos en la región de Ngoya, cerca del río Dja. Durante su estancia, encontró una máscara ritual de madera que le reveló la verdadera conexión entre Europa y la tribu pigmea.
@@ -34,8 +33,8 @@ function Chat() {
           </p>
         </div>
 
-        <h1 className="founder-title"><strong>Lázaro Majara y el Río</strong></h1>
-        <div className="info-content">
+        <h1 className={chatStyles['founder-title']}><strong>Lázaro Majara y el Río</strong></h1>
+        <div className={chatStyles['info-content']}>
           <p>
             Lázaro Majara y el Río nació en Segovia el <strong>20 de septiembre de 1982</strong>. Tras completar sus estudios como <strong>ingeniero de montes y caminos</strong> en la Universidad de Salamanca, donde participó en la tuna universitaria, decidió cambiar de rumbo.
           </p>
@@ -54,3 +53,4 @@ function Chat() {
 }
 
 export default Chat;
+

@@ -3,29 +3,28 @@ const router = express.Router();
 const { v4: uuidv4 } = require('uuid');
 const Comment = require('../models/commentsModel');
 
-// Get comments
+// ✅ GET comments by article type and ID
 router.get('/article/:type/:id/comments', async (req, res) => {
     const { type, id } = req.params;
-    const articleId = parseInt(id, 10);
-
-    if (isNaN(articleId)) {
-        return res.status(400).json({ error: 'Invalid article ID' });
-    }
 
     try {
-        const articleComments = await pool.query(
-            'SELECT * FROM comments WHERE article_id = $1 AND article_type = $2 ORDER BY created_at DESC',
-            [articleId, type]
-        );
+        const comments = await Comment.findAll({
+            where: {
+                articleId: id,
+                articleType: type,
+                isDeleted: false,
+            },
+            order: [['createdAt', 'DESC']],
+        });
 
-        res.json({ comments: articleComments.rows });
+        res.json({ comments });
     } catch (error) {
         console.error('Error fetching comments:', error);
         res.status(500).json({ error: 'Failed to fetch comments' });
     }
 });
 
-// Add comment
+// ✅ POST a new comment
 router.post('/article/:articleId/comment', async (req, res) => {
     const { articleId } = req.params;
     const { userId, username, content, articleType, parentId } = req.body;
@@ -53,7 +52,7 @@ router.post('/article/:articleId/comment', async (req, res) => {
     }
 });
 
-// Soft-delete comment
+// ✅ Soft delete a comment
 router.delete('/article/:articleType/:articleId/comments/:commentId', async (req, res) => {
     const { commentId } = req.params;
     const { userId } = req.body;
