@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Chat from '../components/pages_not_pages/Chat'; // Ajusta la ruta si hace falta
-import '../styles/global.css';
-
 
 export async function getStaticProps() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
