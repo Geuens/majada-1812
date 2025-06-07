@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import StickyHeader from '../../../components/StickyHeader';
 import CommentTemplate from '../../../components/pages_not_pages/CommentTemplate';
-import styles from '../../article_template.module.css';
+import styles from './article_template.module.css';
 
 const categories = ['finance', 'data', 'values']; // Añade aquí todas tus categorías y archivos JSON disponibles
 
