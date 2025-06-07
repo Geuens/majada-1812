@@ -6,8 +6,9 @@
     background-color: #fff;
     border-radius: 5px;
     max-width: 60%;
-    margin: 20px auto; /* Reduced margin for less white space */
+    margin: 20px; /* Reduced margin for less white space */
     padding-top:20px;
+    margin-top:2px;
     padding-right: 70px; /* Reduced padding for less space */
     padding-left: 70px; /* Reduced padding for less space */
     padding-bottom: 1px;
