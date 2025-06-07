@@ -1,0 +1,25 @@
+Identify the websites you want to scrape (Majadahonda-related news sources, blogs, forums, etc.):
+
+Ayuntamiento
+- https://www.majadahonda.org/
+- https://www.majadahonda.org/noticias
+
+PARA ESTE LA IDEA ES IR A TODOS LOS ENLACES DE ESTAS CLASES:
+
+los url aqui: <a href="https://www.majadahonda.org/noticias/-/asset_publisher/1vDv8dGUJ8Ho/content/en-marcha-la-futura-ampliacion-del-centro-de-mayores-de-majadahonda" class="title-wrapper"> <span class="title">En marcha la futura ampliación del centro de mayores de Majadahonda</span> </a>,
+la fehca aqui: article_dates = response.css('span.date::text').getall()
+
+luego dentro de cada un de esos url esta:
+
+el titulo aqui: <span class="header-title">En marcha la futura ampliación del centro de mayores de Majadahonda</span>
+el contenido aqui:<div class="text"><ul> <li><strong>La Junta de Gobierno Local licita el proyecto de ampliación del Centro de Mayores “Reina Sofía”.&nbsp;</strong></li> <li><strong>Para la primera fase de redacción y dirección facultativa el Ayuntamiento destinará cerca de 160.000 euros.&nbsp;</strong></li> </ul> <p>La Junta de Gobierno Local del Ayuntamiento de Majadahonda ha aprobado este viernes el contrato de redacción de anteproyecto, proyecto de ejecución y estudio de seguridad y salud, así como los trabajos de dirección facultativa, aprobación del plan de seguridad y salud y coordinación de seguridad y salud en la fase de obra, para las obras de reforma integral y redistribución de espacios del edificio de la concejalía de Bienestar Social, Familia y Mayores, situado en la esquina de la calle del Mayor y la calle del Viento. &nbsp;</p> <p>El proyecto responde a la necesidad de incrementar espacios por la creciente demanda para las diferentes actividades de mayores y pretende abordar la reforma integral y redistribución de los espacios del citado edificio, convirtiéndolo en anexo del actual centro, adecuando las aulas a las actividades que se realizan, dotándolas de los medios necesarios y de insonorización para que puedan realizarse actividades simultáneas.&nbsp;</p> <p>El Ayuntamiento va a destinar a la licitación del proyecto de ampliación del centro de mayores, en esta primera fase de redacción y a su posterior dirección facultativa un importe cercano a los 160.000 euros. La concejala de Bienestar Social, Familia y Mayores, Marina Arines, ha destacado que esta noticia “supone un primer paso, administrativamente necesario, para hacer realidad la ampliación del centro de mayores, y sin duda, una gran noticia para todas las personas que acuden habitualmente al “Reina Sofía” para participar en las numerosas actividades de formación y de ocio que se programan desde el Ayuntamiento”.&nbsp;</p></div>
+
+- https://www.majadahonda.org/agenda-municipal
+
+partidos
+- vox: https://www.voxespana.es/tag/majadahonda
+- psoe: https://psoemajadahonda.org/noticias/
+- pp: https://ppmajadahonda.es/actualidad
+- vecinos por majadahonda: https://vecinospormajadahonda.com/noticias
+
+
