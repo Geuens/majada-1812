@@ -1,13 +1,17 @@
 from scrapy.crawler import CrawlerProcess
-from scrapy.spiders import Spider
 import scrapy
 
 
-import scrapy
-
+#SPIDER 1
 class MajadahondaNoticiasSpider(scrapy.Spider):
     name = "majadahonda_noticias"
     start_urls = ['https://www.majadahonda.org/noticias']
+
+    custom_settings = {
+        "FEEDS": {
+            "majadahondanoticias_output.json": {"format": "json", "overwrite": True},
+        }
+    }
 
     def parse(self, response):
         # Get all article URLs and dates
@@ -38,7 +42,7 @@ class MajadahondaNoticiasSpider(scrapy.Spider):
 
         print(f"[INFO] Article URL: {response.url}")
         print(f"[INFO] Title: {title}")
-        print(f"[INFO] Content HTML snippet: {content_html[:200]}")  # Solo primeros 200 caracteres
+        print(f"[INFO] Content HTML snippet: {content_html[:20]}")  # Solo primeros 200 caracteres
 
         # Aquí podrías guardar o procesar la info (por ejemplo yield a dict)
         yield {
@@ -48,18 +52,55 @@ class MajadahondaNoticiasSpider(scrapy.Spider):
             # 'content_text': content_text,  # si usas texto plano
         }
 
+class RayoMajadahondaSpider(scrapy.Spider):
+    name = "rayo_majadahonda"
+    start_urls = ['https://www.rayomajadahonda.com/']
 
+    custom_settings = {
+        "FEEDS": {
+            "rayomajadahonda_output.json": {"format": "json", "overwrite": True},
+        }
+    }
+
+    def parse(self, response):
+        # Use the anchor tag with data-hook or distinctive class
+        article_links = response.css('a.O16KGI::attr(href)').getall()
+
+        for link in article_links:
+            full_url = response.urljoin(link)
+            yield scrapy.Request(
+                url=full_url,
+                callback=self.parse_article
+            )
+
+    def parse_article(self, response):
+        title = response.css('h1[data-hook="post-title"]::text').get()
+
+        # Extraer todos los textos de párrafos dentro del contenedor principal
+        paragraphs = response.css('div.text p *::text, div.text p::text').getall()
+
+        # Si no hay `div.text`, buscar entodo el artículo por si hay otros contenedores
+        if not paragraphs:
+            paragraphs = response.css('article p *::text, article p::text').getall()
+
+        content = ' '.join([p.strip() for p in paragraphs if p.strip()])
+
+        yield {
+            'url': response.url,
+            'title': title,
+            'content': content
+        }
 
 
 if __name__ == "__main__":
     process = CrawlerProcess(settings={
-        "FEEDS": {
-            "output.json": {"format": "json"},
-        },
         "USER_AGENT": "Mozilla/5.0",
-        "LOG_LEVEL": "ERROR"  # Reduce logging noise, keep only prints
+        "LOG_LEVEL": "ERROR"
     })
 
     process.crawl(MajadahondaNoticiasSpider)
+    process.crawl(RayoMajadahondaSpider)
+
     process.start()
-    print("\n✅ Finished scraping. Check output.json for full data.")
+    print("\n✅ All spiders finished.")
+

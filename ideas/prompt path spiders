@@ -1,3 +1,16 @@
+- Ayuntamiento
+
+PROMPT 1: ¿Es noticia?
+
+Dado el contenido del siguiente texto: [scrapper content],
+Anlaiza el contenido para ver si intersante para una noticia en un periodico local. Debes valorar si es de ineteres al lector y a la comunidad.
+Deberas poner una nota del 1 al 10. Donde el 1 es una noticia sosa y sin interes y el 10 una noticia extremandamente relevante e informativa.
+Responde unicamente y directamente con este formato:
+
+"{Es noticia: Si/No; Nota: nota numerica}"
+
+if es noticia:
+
 PROMPT 1
 
 Con la siguiente información y únicamente con la siguiente información redacta un articulo periodístico informativo en tono neutro y aureliano:

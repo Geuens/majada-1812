@@ -1,0 +1,73 @@
+{
+  "title": "Majadahonda amplía su oferta para mayores con la reforma del centro 'Reina Sofía'",
+  "subtitle": "El Ayuntamiento licita por 160.000 euros la primera fase del proyecto, que modernizará el edificio anexo",
+  "cover": "/data/articles/articles_resources/reina-sofia.jpg",
+  "type": "Noticias",
+  "link": "https://ejemplo.com/majadahonda-reforma-reina-sofia",
+  "date": "2023-11-15",
+  "author": "Lázaro Majara y del Río",
+  "content": [
+    {
+      "type": "image",
+      "src": "/data/articles/articles_resources/reina-sofia.jpg",
+      "alt": "Centro de Mayores Reina Sofía en Majadahonda"
+    },
+    {
+      "type": "paragraph",
+      "text": "La Junta de Gobierno Local de Majadahonda ha dado luz verde a un proyecto clave para la tercera edad: la ampliación y reforma integral del Centro de Mayores 'Reina Sofía'. Con una inversión inicial de 160.000 euros, el consistorio busca adaptar el edificio anexo —ubicado en la confluencia de las calles Mayor y Viento— a las necesidades actuales, marcadas por un aumento en la participación y la diversificación de actividades.",
+      "bold": [
+        "160.000 euros"
+      ]
+    },
+    {
+      "type": "subtitle",
+      "text": "Claves del proyecto"
+    },
+    {
+      "type": "paragraph",
+      "text": "El proyecto tiene como objetivo redistribuir espacios y modernizar instalaciones para optimizar su uso, con aulas insonorizadas y equipadas. La inversión inicial de 160.000 euros cubrirá la redacción del proyecto, dirección facultativa y estudios de seguridad. Los beneficiarios serán los usuarios del centro, que verán ampliada la oferta de actividades formativas y de ocio.",
+      "bold": [
+        "aulas insonorizadas y equipadas",
+        "actividades formativas y de ocio"
+      ]
+    },
+    {
+      "type": "subtitle",
+      "text": "Detalles de la intervención"
+    },
+    {
+      "type": "paragraph",
+      "text": "El proyecto abordará una reforma integral del inmueble anexo al centro actual, con el fin de crear más espacios para actividades simultáneas, mejorar la insonorización de las aulas y dotar a las instalaciones de medios técnicos adecuados.",
+      "bold": [
+        "reforma integral",
+        "medios técnicos adecuados"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "La concejala de Bienestar Social, Marina Arines, ha subrayado que esta licitación es el 'primer paso administrativo necesario' para materializar una demanda histórica: 'Es una gran noticia para quienes disfrutan diariamente del ‘Reina Sofía’ y confirman que Majadahonda apuesta por sus mayores', afirmó.",
+      "bold": [
+        "'primer paso administrativo necesario'",
+        "Majadahonda apuesta por sus mayores"
+      ]
+    },
+    {
+      "type": "subtitle",
+      "text": "Próximos pasos"
+    },
+    {
+      "type": "paragraph",
+      "text": "Una vez adjudicado el contrato, se elaborará el anteproyecto y el plan de seguridad, previos al inicio de las obras. La intervención no solo mejorará la funcionalidad del centro, sino que reforzará su papel como pilar social en la vida de los mayores del municipio.",
+      "bold": [
+        "pilar social"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Con esta actuación, Majadahonda avanza en su compromiso de ofrecer espacios dignos y adaptados a una población cada vez más activa y participativa.",
+      "bold": [
+        "espacios dignos y adaptados"
+      ]
+    }
+  ]
+}
