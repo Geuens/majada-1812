@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import unicodedata
 from dotenv import load_dotenv
 from openai import OpenAI
 
@@ -19,7 +20,7 @@ class Lazaro:
 
     def deepseek_api_call(self, prompt):
         response = self.client.chat.completions.create(
-            model="deepseek-chat",
+            model="gpt-4.1-2025-04-14",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt}
@@ -35,14 +36,22 @@ class Lazaro:
 Dado el contenido del siguiente texto:
 {content}
 
-Analiza el contenido para ver si es interesante para una noticia en un periódico local. Debes valorar si es de interés al lector y a la comunidad.
+Analiza el contenido para ver si es interesante para una noticia en un periódico local (ten en cuenta una poblacion tranquila de 70 000 habitantes). Poir lo que notiias de nuevas plazas, pequeños eventos culturales son relevantes.. Debes valorar si es de interés al lector y a la comunidad.
 Deberás poner una nota del 1 al 10. Donde el 1 es una noticia sosa y sin interés y el 10 una noticia extremadamente relevante e informativa.
 Responde únicamente y directamente con este formato:
 
 "{{Es noticia: Si/No; Nota: nota numérica}}"
 """
         response = self.deepseek_api_call(prompt)
-        return 'Si' in response, response
+        #print("response")
+        #print(response)
+        return (
+            'si' in ''.join(
+                c for c in unicodedata.normalize('NFD', response)
+                if unicodedata.category(c) != 'Mn'
+            ).lower(),
+            response
+        )
 
     def generate_article(self, content):
         prompt = f"""
@@ -74,17 +83,11 @@ El artículo debe seguir las siguientes reglas:
     {{
       "title": "El titulo que consideres apropiado para el articulo",
       "subtitle": "Aqui debes poner un antetitulo relevante a la noticia",
-      "cover": "/data/articles/articles_resources/titulo.jpg",
       "type": "aquie de bes elegir una o varias categroias de la lista [Noticias, Opinion, Cultura y Deporte]
       "link": "el url",
       "date": "fecha de hoy",
       "author": "Lázaro Majara y del Río",
       "content": [
-        {{
-          "type": "image",
-          "src": "/data/articles/articles_resources/titulo.jpg",
-          "alt": "descripción imagen"
-        }},
         {{
           "type": "paragraph",
           "text": "contenido de los aprafos que se quieran añadir, uno de estos por parrafo",
