@@ -88,3 +88,6 @@ bin/
 *.old
 *.orig
 *.rej
+
+.next/
+
