@@ -1,5 +1,107 @@
 [
   {
+    "title": "Semana cultural en Majadahonda: libros, teatro y música para todos",
+    "subtitle": "Disfruta de literatura, espectáculos y actividades en diferentes espacios municipales",
+    "link": "https://www.majadahonda.org/agenda-cultural-semana-enero-2026",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Majadahonda vive una intensa semana cultural, con una programación que acerca la literatura, el teatro y la música a todos los públicos. Del 27 al 31 de enero, vecinos y visitantes podrán disfrutar de actividades y espectáculos en diferentes espacios municipales.",
+        "bold": [
+          "Majadahonda",
+          "semana cultural",
+          "literatura",
+          "teatro",
+          "música"
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Literatura y cuentacuentos en la Biblioteca Municipal"
+      },
+      {
+        "type": "paragraph",
+        "text": "El martes 27 de enero, la escritora María Fernández presentará el cuento infantil \"La niña que siempre dice sí\" en la Sala Polivalente de la Biblioteca Municipal Francisco Umbral. La historia enseña a los más pequeños el valor de la asertividad, con situaciones para aprender a decir 'no'. La sesión está dirigida a niños a partir de 4 años y la entrada es libre hasta completar aforo.",
+        "bold": [
+          "María Fernández",
+          "La niña que siempre dice sí",
+          "asertividad",
+          "niños",
+          "entrada libre"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "El jueves 29 de enero, Juan Malabar ofrecerá la sesión \"La hora del cuento\" con 'Cuentos de quita y pon', un espacio donde rimas, títeres e historias harán las delicias del público infantil. Para participar, es necesario tener carnet de la biblioteca e inscribirse previamente.",
+        "bold": [
+          "Juan Malabar",
+          "La hora del cuento",
+          "Cuentos de quita y pon",
+          "público infantil"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "El miércoles 28 de enero se presenta la novela \"Perros de pastor\" de Martín Gamboa en la Sala Polivalente, una obra que narra la búsqueda de pertenencia en el entorno rural a comienzos del siglo XX. La entrada es libre hasta completar aforo.",
+        "bold": [
+          "Martín Gamboa",
+          "Perros de pastor",
+          "novela",
+          "entrada libre"
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Teatro para todos los gustos"
+      },
+      {
+        "type": "paragraph",
+        "text": "El viernes 30 de enero la Asociación Cultural Encuentro pone en escena la comedia \"Año nuevo, vida nueva\" dentro de la IX Muestra de Teatro de Grupos Aficionados. La función, destinada a todos los públicos, cuenta la historia de dos jubilados y su búsqueda de pareja por Internet. Las invitaciones se recogen una hora antes en la Casa de la Cultura Carmen Conde.",
+        "bold": [
+          "Asociación Cultural Encuentro",
+          "Año nuevo, vida nueva",
+          "comedia",
+          "IX Muestra de Teatro de Grupos Aficionados"
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Espectáculo musical para cerrar la semana"
+      },
+      {
+        "type": "paragraph",
+        "text": "El sábado 31 de enero, el espectáculo \"We love disco\" combina teatro musical y recursos audiovisuales para sorprender a toda la familia. El evento, que cuenta con cantantes, bailarines y un gran despliegue visual, pone el broche final a la semana cultural en la Casa de la Cultura Carmen Conde. Las entradas ya están a la venta en línea.",
+        "bold": [
+          "We love disco",
+          "teatro musical",
+          "familia",
+          "entradas"
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Resumen de la agenda cultural semanal"
+      },
+      {
+        "type": "paragraph",
+        "text": "La programación de esta semana incluye cuentos y presentaciones literarias para niños y adultos, teatro de humor y un espectáculo musical para todos los públicos. Majadahonda invita a vecinos y visitantes a disfrutar de la cultura en familia o entre amigos.",
+        "bold": [
+          "programación",
+          "niños",
+          "adultos",
+          "teatro",
+          "espectáculo musical",
+          "Majadahonda",
+          "cultura"
+        ]
+      }
+    ],
+    "category": "values",
+    "date": "2026-01-26",
+    "author": "Lázaro Majara y del río",
+    "id": 0
+  },
+  {
     "category": "values",
     "title": "Majadahonda amplía la oferta de su Escuela Municipal de Música con nuevas plazas y profesorado",
     "subtitle": "La Escuela 'Enrique Granados' lidera la formación musical pública en la Comunidad de Madrid con una ampliación histórica",
@@ -119,7 +221,7 @@
         ]
       }
     ],
-    "id": 0
+    "id": 1
   },
   {
     "category": "values",
@@ -201,7 +303,7 @@
         ]
       }
     ],
-    "id": 1
+    "id": 2
   },
   {
     "category": "values",
@@ -293,7 +395,7 @@
         ]
       }
     ],
-    "id": 2
+    "id": 3
   },
   {
     "category": "values",
@@ -380,7 +482,7 @@
         ]
       }
     ],
-    "id": 3
+    "id": 4
   },
   {
     "category": "values",
@@ -503,7 +605,7 @@
         ]
       }
     ],
-    "id": 4
+    "id": 5
   },
   {
     "category": "values",
@@ -609,10 +711,10 @@
         ]
       }
     ],
-    "id": 5
+    "id": 6
   },
   {
-    "id": 6,
+    "id": 7,
     "category": "values",
     "title": "Actividades para Jóvenes en Majadahonda: ¡Diversión y Aprendizaje en Primavera!",
     "subtitle": "La \"Primavera Joven\" llega a Majadahonda con una programación variada para jóvenes de hasta 30 años, con propuestas que combinan formación, entretenimiento y ocio saludable.",
@@ -677,7 +779,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "category": "values",
     "title": "Semana Cultural en Majadahonda",
     "subtitle": "Poesía, música y teatro para todos los públicos.",
@@ -760,7 +862,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "category": "values",
     "title": "Curso Gratuito de Presentaciones en Google: Mejora tu Comunicación Visual en Majadahonda",
     "subtitle": "Del 18 al 19 de marzo de 2025, Majadahonda ofrecerá un curso gratuito para mejorar la forma en que presentas tus ideas.",
@@ -830,7 +932,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "category": "values",
     "title": "El desamparo de la política local y el olvido de la tierra",
     "subtitle": "La política local: cercanía, alma y realidad palpable",
@@ -935,7 +1037,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "category": "values",
     "title": "El Rayo Majadahonda resiste en el Cerro del Espino y suma un punto ante el Guadalajara",
     "subtitle": "Empate trabajado en casa.",
