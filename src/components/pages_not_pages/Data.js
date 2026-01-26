@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import styles from './General.module.css';
 
-const valueNone = '/data/articles/articles_resources/image-4.jpg'; // Imagen por defecto para Data
+const valueNone = '/data/articles/articles_resources/image-4.png'; // Imagen por defecto para Data
 
 export async function getServerSideProps() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;

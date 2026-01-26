@@ -116,9 +116,9 @@ function Values({ valuesArticles }) {
 
         <div className={styles['article-preview']}>
           <img
-            src={hoveredArticle ? hoveredArticle.cover : valueNone}
-            alt="Preview"
-            className={styles['preview-image']}
+              src={hoveredArticle?.cover || valueNone}
+              alt={hoveredArticle ? hoveredArticle.title : "Default preview"}
+              className={styles["preview-image"]}
           />
           {hoveredArticle ? (
             <>

@@ -103,13 +103,13 @@ function ArticleTemplate({ userId, isLoggedIn, username }) {
                 </div>
             )}
 
-            <CommentTemplate
+            /*<CommentTemplate
                 userId={userId}
                 username={userUsername}
                 articleId={articleId}
                 articleType={articleCategory} // Pass articleType here
                 isLoggedIn={isLoggedIn}
-            />
+            />*/
         </div>
     );
 }
