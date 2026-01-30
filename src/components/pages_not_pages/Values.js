@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import styles from './General.module.css';
 
-const valueNone = '/data/articles/articles_resources/image-2.jpg';
+const valueNone = '/data/articles/articles_resources/image-2.png';
 
 export async function getServerSideProps() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;
 
   try {
     const res = await fetch(`${baseUrl}/api/articles/values`);

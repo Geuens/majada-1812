@@ -5,7 +5,7 @@ import styles from './General.module.css';
 const valueNone = '/data/articles/articles_resources/image-4.png'; // Imagen por defecto para Data
 
 export async function getServerSideProps() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;
 
   try {
     const res = await fetch(`${baseUrl}/api/articles/data`);
@@ -103,9 +103,9 @@ function Data({ dataArticles }) {
 
         <div className={styles['article-preview']}>
           <img
-            src={hoveredArticle ? hoveredArticle.cover : valueNone}
-            alt="Preview"
-            className={styles['preview-image']}
+            src={hoveredArticle?.cover || valueNone}
+            alt={hoveredArticle ? hoveredArticle.title : "Default preview"}
+            className={styles["preview-image"]}
           />
           {hoveredArticle ? (
             <>
