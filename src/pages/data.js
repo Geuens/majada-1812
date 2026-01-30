@@ -3,10 +3,13 @@ import Link from 'next/link';
 import Data from '../components/pages_not_pages/Data'; // Asegúrate que esta ruta y componente existen
 
 export async function getStaticProps() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;
 
   try {
-    const res = await fetch(`${baseUrl}/data/articles/data.json`);
+    const res = await fetch(`${baseUrl}/data.json`, {
+      // avoid cached fetches during build
+      headers: { "cache-control": "no-cache" },
+    });
     if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
 
     const dataArticles = await res.json();

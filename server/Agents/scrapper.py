@@ -1,5 +1,6 @@
 from scrapy.crawler import CrawlerProcess
 import scrapy
+from agent_utils.agent_utils import parse_spanish_date
 
 
 #SPIDER 1

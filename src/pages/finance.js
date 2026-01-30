@@ -3,10 +3,13 @@ import Link from 'next/link';
 import Finance from '../components/pages_not_pages/Finance';
 
 export async function getStaticProps() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;
 
   try {
-    const res = await fetch(`${baseUrl}/data/articles/finance.json`);
+    const res = await fetch(`${baseUrl}/finance.json`, {
+      // avoid cached fetches during build
+      headers: { "cache-control": "no-cache" },
+    });
     if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
 
     const financeArticles = await res.json();
