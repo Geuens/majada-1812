@@ -49,7 +49,6 @@ export default function FinancePage({ financeArticles }) {
     <div className="App" style={{ paddingTop: isFixed ? `${navHeight}px` : '0' }}>
       <header className={`app-header ${isFixed ? 'header-fixed' : ''}`}>
         <h1 className={`wsj-title ${isFixed ? 'title-fixed' : ''}`}>majada 1812</h1>
-        <h2 className={`wsj-sub-title ${isFixed ? 'sub-title-hidden' : ''}`}>Ad Virtutem, Ad Libertas</h2>
 
         <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
           <Link href="/values">Noticias</Link>
