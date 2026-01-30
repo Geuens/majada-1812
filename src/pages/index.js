@@ -6,7 +6,7 @@ export async function getStaticProps() {
   const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;
 
   try {
-    const res = await fetch(`${baseUrl}/data/articles/values.json`);
+    const res = await fetch(`${baseUrl}/values.json`);
     if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
 
     const valuesArticles = await res.json();
