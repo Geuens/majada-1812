@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 import Values from '../components/pages_not_pages/Values';
 
@@ -21,6 +22,12 @@ export default function ValuesPage({ valuesArticles }) {
   const [isFixed, setIsFixed] = useState(false);
   const [navHeight, setNavHeight] = useState(0);
   const navRef = useRef(null);
+
+  // SEO (mínimo, sin volverse loco)
+  const SITE_URL = 'https://majada1812.com';
+  const PAGE_URL = `${SITE_URL}/`;
+  const TITLE = 'majada 1812'; // no lo cambio
+  const DESCRIPTION = 'Periódico local independiente de Majadahonda: noticias, opinión, cultura y deporte.';
 
   useEffect(() => {
     // Calculate the nav height and set it
@@ -46,28 +53,40 @@ export default function ValuesPage({ valuesArticles }) {
   }, [isFixed]); // Adding isFixed to the dependencies list to optimize
 
   return (
-    <div className="App" style={{ paddingTop: isFixed ? `${navHeight}px` : '0' }}>
-      <header className={`app-header ${isFixed ? 'header-fixed' : ''}`}>
-        <h1 className={`wsj-title ${isFixed ? 'title-fixed' : ''}`}>majada 1812</h1>
+    <>
+      <Head>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESCRIPTION} />
+        <link rel="canonical" href={PAGE_URL} />
 
-        <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
-          <Link href="/values">Noticias</Link>
-          <Link href="/finance">Opinión</Link>
-          <Link href="/data">Cultura/Deporte</Link>
-        </nav>
+        {/* Open Graph mínimo (opcional pero útil para compartir) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:url" content={PAGE_URL} />
+      </Head>
 
-        <div className="chat-link">
-          <Link href="/chat">@Contacto</Link>
+      <div className="App" style={{ paddingTop: isFixed ? `${navHeight}px` : '0' }}>
+        <header className={`app-header ${isFixed ? 'header-fixed' : ''}`}>
+          <h1 className={`wsj-title ${isFixed ? 'title-fixed' : ''}`}>majada 1812</h1>
+
+          <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
+            <Link href="/values">Noticias</Link>
+            <Link href="/finance">Opinión</Link>
+            <Link href="/data">Cultura/Deporte</Link>
+          </nav>
+
+          <div className="chat-link">
+            <Link href="/chat">@Contacto</Link>
+          </div>
+        </header>
+
+        <Values valuesArticles={valuesArticles} />
+
+        <div className="container-sentence">
+          <p className="sentence">- Poned atención: un corazón solitario no es un corazón -</p>
         </div>
-      </header>
-
-      <Values valuesArticles={valuesArticles} />
-
-      <div className="container-sentence">
-        <p className="sentence">
-          - Poned atención: un corazón solitario no es un corazón -
-        </p>
       </div>
-    </div>
+    </>
   );
 }
