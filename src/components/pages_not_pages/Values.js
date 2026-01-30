@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import styles from './General.module.css';
 
-const valueNone = '/data/articles/articles_resources/image-2.png';
+const valueNone = '/data/articles/articles_resources/cover_2.png';
 
 export async function getServerSideProps() {
   const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;

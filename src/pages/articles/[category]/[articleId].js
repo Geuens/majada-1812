@@ -56,7 +56,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { category, articleId } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;
   const url = `${baseUrl}/data/articles/${category}.json`;
 
   console.log('📄 [getStaticProps] Loading article', { category, articleId });
