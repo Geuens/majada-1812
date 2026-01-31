@@ -53,7 +53,7 @@ export default function ValuesPage({ valuesArticles }) {
         <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
           <Link href="/values">Noticias</Link>
           <Link href="/finance">Opinión</Link>
-          <Link href="/data">Cultura/Deporte</Link>
+          <Link href="/data">Deportes</Link>
         </nav>
 
         <div className="chat-link">

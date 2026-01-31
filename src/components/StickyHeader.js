@@ -38,9 +38,6 @@ const StickyHeader = () => {
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
           >
             <h1 className={`wsj-title ${isFixed ? 'title-fixed' : ''}`}>majada 1812</h1>
-            <h2 className={`wsj-sub-title ${isFixed ? 'sub-title-hidden' : ''}`}>
-              Ad Virtutem, Ad Libertas
-            </h2>
           </div>
 
           <nav ref={navRef} className={isFixed ? 'fixed' : ''}>
