@@ -156,9 +156,9 @@ const ArticlePage = ({ article }) => {
         )}
 
         {/* Comment section now inside the main container */}
-        <div className={styles['comments-wrapper']}>
+        /*<div className={styles['comments-wrapper']}>
           <CommentTemplate articleId={article.id} articleType={article.category} />
-        </div>
+        </div>*/
 
         {/* Spacer div to create extra space below comments */}
         <div style={{ height: '4rem', width: '100%' }}></div>
