@@ -1,12 +1,10 @@
 const CATEGORIES = ["finance", "data", "values"];
 
-// ONE source of truth for the domain
+// Source of truth for the public site
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://majada1812.com";
 
-// Base where category JSONs live
-const ARTICLES_BASE =
-  process.env.NEXT_PUBLIC_ARTICLES_BASE_URL ||
-  `${SITE_URL}/data/articles`;
+// IMPORTANT: sitemap reads ONLY from public, indexable JSONs
+const ARTICLES_BASE = `${SITE_URL}/data/articles`;
 
 function escapeXml(str) {
   return String(str)
@@ -24,8 +22,8 @@ async function fetchCategory(category) {
     if (!res.ok) return [];
     const data = await res.json();
     return Array.isArray(data) ? data : [];
-  } catch (e) {
-    // Nunca romper el sitemap por un fetch
+  } catch {
+    // Sitemap must never break because of a fetch
     return [];
   }
 }
@@ -41,25 +39,30 @@ export async function getServerSideProps({ res }) {
       `${SITE_URL}/contacto`,
     ];
 
-    // Fetch articles
+    // Fetch all articles from public JSONs
     const articlesByCategory = await Promise.all(
       CATEGORIES.map(fetchCategory)
     );
     const articles = articlesByCategory.flat();
 
-    // Article URLs
+    // Build article URLs
     const articleUrls = articles
       .filter(
         (a) =>
           a &&
           a.category &&
-          (a.id === 0 || a.id) &&
+          (a.id === 0 || a.id !== undefined) &&
           a.date
       )
       .map((a) => {
         const loc = `${SITE_URL}/articles/${a.category}/${a.id}`;
-        const lastmod = new Date(a.date).toISOString();
-        return { loc, lastmod };
+        const lastmod = new Date(a.date);
+        return {
+          loc,
+          lastmod: isNaN(lastmod)
+            ? new Date().toISOString()
+            : lastmod.toISOString(),
+        };
       });
 
     // Merge + dedupe
@@ -97,8 +100,8 @@ ${urlsXml}
     res.setHeader("Content-Type", "text/xml; charset=utf-8");
     res.write(sitemap);
     res.end();
-  } catch (e) {
-    // Último recurso: nunca devolver 500
+  } catch {
+    // Absolute fallback: valid but empty sitemap, never 500
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/xml; charset=utf-8");
     res.write(`<?xml version="1.0" encoding="UTF-8"?>
@@ -106,10 +109,11 @@ ${urlsXml}
     res.end();
   }
 
-  // IMPORTANTE: no renderizar nada después de cerrar la response
+  // Do NOT render anything after closing the response
   return { props: null };
 }
 
 export default function Sitemap() {
   return null;
 }
+
