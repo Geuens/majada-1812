@@ -8,6 +8,7 @@ const categories = ['finance', 'data', 'values'];
 
 export async function getStaticPaths() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   let paths = [];
 
   for (const category of categories) {
@@ -43,8 +44,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { category, articleId } = params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const url = `${baseUrl}/data/articles/${category}.json`;
+  const baseUrl = process.env.NEXT_PUBLIC_ARTICLES_BASE_URL;
+  const url = `${baseUrl}/${category}.json`;
 
   try {
     const res = await fetch(url);
@@ -68,31 +69,32 @@ export async function getStaticProps({ params }) {
 }
 
 const ArticlePage = ({ article }) => {
-  if (!article) return null;
+  if (!article) return <p>Article not found!</p>;
+
+  // ✅ FECHA SEGURA (NO rompe build)
+  const parsedDate = new Date(article.date);
+  const isoDate = isNaN(parsedDate.getTime())
+    ? new Date().toISOString()
+    : parsedDate.toISOString();
 
   const articleUrl = `https://majada1812.com/articles/${article.category}/${article.id}`;
-  const publishedDate = article.date
-    ? new Date(article.date).toISOString()
-    : new Date().toISOString();
+  const imageUrl = article.imageUrl || 'https://majada1812.com/default-image.jpg';
+  const authorName = article.author || 'Redacción Majada1812';
 
   return (
     <>
       <Head>
-        {/* BASIC SEO */}
         <title>{article.title} | Majada1812</title>
         <meta name="description" content={article.subtitle} />
 
-        {/* OPEN GRAPH */}
+        {/* Open Graph */}
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.subtitle} />
-        <meta
-          property="og:image"
-          content={article.imageUrl || 'https://majada1812.com/default-image.jpg'}
-        />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={articleUrl} />
 
-        {/* GOOGLE NEWS STRUCTURED DATA */}
+        {/* ✅ GOOGLE NEWS STRUCTURED DATA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -105,15 +107,12 @@ const ArticlePage = ({ article }) => {
               },
               "headline": article.title,
               "description": article.subtitle,
-              "image": [
-                article.imageUrl ||
-                  "https://majada1812.com/default-image.jpg",
-              ],
-              "datePublished": publishedDate,
-              "dateModified": publishedDate,
+              "image": [imageUrl],
+              "datePublished": isoDate,
+              "dateModified": isoDate,
               "author": {
                 "@type": "Organization",
-                "name": article.author || "Redacción Majada1812",
+                "name": authorName,
               },
               "publisher": {
                 "@type": "Organization",
@@ -158,15 +157,12 @@ const ArticlePage = ({ article }) => {
             })}
         </div>
 
-        <p className={styles['author-style']}>
-          Redactado por {article.author || 'Redacción Majada1812'}
-        </p>
+        <p className={styles['author-style']}>Redactado por {authorName}</p>
 
         <div className={styles['article-date-template']}>
-          {new Date(article.date).toLocaleDateString()}
+          {parsedDate.toLocaleDateString()}
         </div>
 
-        {/* COMMENTS (optional) */}
         {/*
         <div className={styles['comments-wrapper']}>
           <CommentTemplate articleId={article.id} articleType={article.category} />
